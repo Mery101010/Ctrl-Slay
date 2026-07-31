@@ -154,6 +154,7 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
         vol_score = _normalize_volume(len(evidence_ids), max_size * 3)  # scale adjusted
         recency_score = theme.get('recency_score', 0.5)  # from inferred themes
         roadmap_gap_score = 1 - best_sim
+        scope_applicable = scope_result.get("scope_type", "none") != "none"
         scope_alignment_score = 1.0 if scope_result.get("matches_scope") else 0.0
 
         breakdown = {
@@ -162,7 +163,24 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
             "roadmap_gap": round(roadmap_gap_score, 3),
             "scope_alignment": round(scope_alignment_score, 3),
         }
-        confidence = sum(CONFIDENCE_WEIGHTS[k] * v for k, v in breakdown.items()) * 100
+
+        # scope_alignment only has a real signal when the scope check actually
+        # ran (best_sim was high enough to compare against a specific issue).
+        # Below that threshold scope_type=="none" means "not applicable", not
+        # "failed" - counting it as 0 there silently caps every weak/no-match
+        # gap's confidence ceiling at 75% and compresses the whole batch into
+        # a narrow band. Renormalize over just the applicable weights instead,
+        # so confidence reflects the strength of the signals that actually
+        # apply to this gap.
+        active_weights = dict(CONFIDENCE_WEIGHTS)
+        if not scope_applicable:
+            del active_weights["scope_alignment"]
+        weight_total = sum(active_weights.values())
+        active_weights = {k: w / weight_total for k, w in active_weights.items()}
+
+        confidence = sum(
+            active_weights[k] * breakdown[k] for k in active_weights
+        ) * 100
 
         results.append(GapResult(
             need=latent_need,  # Now the inferred latent need, not surface complaint
@@ -170,6 +188,7 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
             confidence_breakdown={
                 **breakdown,
                 "weights": CONFIDENCE_WEIGHTS,
+                "active_weights": {k: round(w, 3) for k, w in active_weights.items()},
                 "raw_cluster_size": len(evidence_ids),
                 "raw_similarity_to_nearest_roadmap_item": round(best_sim, 3),
                 "scope_type": scope_result.get("scope_type", "unknown"),

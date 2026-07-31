@@ -26,6 +26,16 @@ def load_evidence() -> dict:
     return json.loads(EVIDENCE_INDEX_JSON.read_text(encoding="utf-8"))
 
 
+def _issue_link(nid: Optional[str]) -> str:
+    if not nid:
+        return "none"
+    m = re.match(r"issue_(\d+)$", nid)
+    if not m:
+        return f"`{nid}`"
+    url = f"https://github.com/{GITHUB_OWNER}/{GITHUB_REPO}/issues/{m.group(1)}"
+    return f"[{nid}]({url})"
+
+
 def _gap_summary(gaps: list[dict]) -> str:
     lines = []
     for i, g in enumerate(gaps, 1):
@@ -71,7 +81,7 @@ def _heuristic_answer(question: str, gaps: list[dict], evidence: dict) -> dict:
             bullets.append(
                 f"**#{i} · {g.get('confidence')}% · {g.get('verdict')}**\n"
                 f"{g.get('need')}\n"
-                f"_Nearest roadmap:_ `{g.get('nearest_roadmap_item')}` "
+                f"_Nearest roadmap:_ {_issue_link(g.get('nearest_roadmap_item'))} "
                 f"(sim={g.get('roadmap_similarity')})"
             )
         return {
@@ -103,7 +113,7 @@ def _heuristic_answer(question: str, gaps: list[dict], evidence: dict) -> dict:
         f"**Confidence breakdown:** volume={bd.get('volume')}, "
         f"recency={bd.get('recency')}, roadmap_gap={bd.get('roadmap_gap')}, "
         f"scope_alignment={bd.get('scope_alignment')}\n\n"
-        f"**Nearest roadmap item:** `{gap.get('nearest_roadmap_item')}` "
+        f"**Nearest roadmap item:** {_issue_link(gap.get('nearest_roadmap_item'))} "
         f"(similarity={gap.get('roadmap_similarity')})\n\n"
     )
     if excerpts:

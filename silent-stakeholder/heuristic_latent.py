@@ -145,16 +145,21 @@ def infer_need_from_texts(texts: list[str], surface_label: str = "") -> dict[str
         ).strip(" :,-")
         # Never emit raw keyword dumps as a "need"
         looks_like_keywords = cleaned.count(",") >= 2 and len(cleaned.split()) <= 12
+        is_generic = looks_like_keywords or not cleaned
         return {
             "latent_need": (
                 "Users hit recurring app friction that slows or blocks sending, "
                 "and they need the product to feel dependable at the moment of transfer."
-                if looks_like_keywords or not cleaned
+                if is_generic
                 else cleaned
             ),
             "why_latent": "Heuristic packs did not fire; used a conservative reliability framing.",
             "evidence_pattern": "Insufficient multi-signal co-occurrence for a pack match.",
             "source": "heuristic_fallback",
+            # Generic fallbacks all share identical wording - group them under one
+            # pseudo-pack so merge_by_pack collapses them into a single gap instead
+            # of emitting the same "need" text multiple times in the top N.
+            "pack_id": "generic_reliability_fallback" if is_generic else None,
         }
 
     scored.sort(key=lambda x: -x[0])

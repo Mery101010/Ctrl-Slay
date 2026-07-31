@@ -2,7 +2,16 @@ const state = {
   history: [],
   busy: false,
   gaps: [],
+  roadmapUrl: "",
 };
+
+function issueLink(nid) {
+  if (!nid) return "none";
+  const m = /^issue_(\d+)$/.exec(nid);
+  if (!m || !state.roadmapUrl) return `<code>${nid}</code>`;
+  const url = `${state.roadmapUrl}/issues/${m[1]}`;
+  return `<a href="${url}" target="_blank" rel="noreferrer">${nid}</a>`;
+}
 
 const $ = (sel) => document.querySelector(sel);
 
@@ -28,6 +37,7 @@ async function refreshStatus() {
   const s = await fetch("/api/status").then((r) => r.json());
   $("#provider").textContent = `${s.provider.label} · ${s.provider.model}`;
   $("#subtitle").textContent = `${s.product} · ${s.gaps_count || 0} gaps loaded`;
+  state.roadmapUrl = s.roadmap || "";
   if (s.gaps_count) {
     state.gaps = await fetch("/api/gaps").then((r) => r.json());
   }
@@ -45,7 +55,7 @@ function renderGapCard(gap, rank) {
     <span class="verdict ${gap.verdict || ""}">${gap.verdict || "—"} · ${gap.confidence}%</span>
     <div><strong>#${rank}</strong> ${renderMarkdownLite(gap.need || "")}</div>
     <div class="meta" style="margin-top:8px;color:#678073;font-size:0.82rem">
-      Nearest: <code>${gap.nearest_roadmap_item || "none"}</code>
+      Nearest: ${issueLink(gap.nearest_roadmap_item)}
       · sim ${gap.roadmap_similarity ?? "—"}
       · ${ (gap.evidence_ids || []).length } evidence IDs
     </div>
