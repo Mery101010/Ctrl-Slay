@@ -1,0 +1,41 @@
+queue,type,ticket_count,source
+Technical Support,Incident,7409,tobi_bueck_tickets
+Product Support,Incident,3829,tobi_bueck_tickets
+Customer Service,Request,3428,tobi_bueck_tickets
+Technical Support,Problem,3090,tobi_bueck_tickets
+Technical Support,Request,2837,tobi_bueck_tickets
+Billing and Payments,Request,2384,tobi_bueck_tickets
+IT Support,Incident,2074,tobi_bueck_tickets
+Product Support,Request,2039,tobi_bueck_tickets
+Product Support,Problem,2034,tobi_bueck_tickets
+Customer Service,Incident,1929,tobi_bueck_tickets
+Customer Service,Problem,1518,tobi_bueck_tickets
+IT Support,Problem,1485,tobi_bueck_tickets
+IT Support,Request,1190,tobi_bueck_tickets
+Billing and Payments,Incident,1166,tobi_bueck_tickets
+Product Support,Change,1058,tobi_bueck_tickets
+Billing and Payments,Problem,1050,tobi_bueck_tickets
+Service Outages and Maintenance,Incident,1046,tobi_bueck_tickets
+Returns and Exchanges,Incident,983,tobi_bueck_tickets
+IT Support,Change,976,tobi_bueck_tickets
+Technical Support,Change,850,tobi_bueck_tickets
+Sales and Pre-Sales,Request,705,tobi_bueck_tickets
+Returns and Exchanges,Request,655,tobi_bueck_tickets
+Customer Service,Change,545,tobi_bueck_tickets
+Returns and Exchanges,Problem,489,tobi_bueck_tickets
+Human Resources,Incident,484,tobi_bueck_tickets
+Service Outages and Maintenance,Change,457,tobi_bueck_tickets
+Sales and Pre-Sales,Incident,316,tobi_bueck_tickets
+Returns and Exchanges,Change,311,tobi_bueck_tickets
+Service Outages and Maintenance,Request,285,tobi_bueck_tickets
+Billing and Payments,Change,274,tobi_bueck_tickets
+Human Resources,Request,271,tobi_bueck_tickets
+Sales and Pre-Sales,Change,264,tobi_bueck_tickets
+General Inquiry,Incident,208,tobi_bueck_tickets
+Sales and Pre-Sales,Problem,205,tobi_bueck_tickets
+General Inquiry,Change,203,tobi_bueck_tickets
+General Inquiry,Request,156,tobi_bueck_tickets
+Service Outages and Maintenance,Problem,124,tobi_bueck_tickets
+General Inquiry,Problem,101,tobi_bueck_tickets
+Human Resources,Problem,100,tobi_bueck_tickets
+Human Resources,Change,59,tobi_bueck_tickets

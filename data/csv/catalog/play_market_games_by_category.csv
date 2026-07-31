@@ -1,0 +1,336 @@
+source,product_type,app_key,app_name,unified_category,play_category_clean,section,review_count,score,ratings_count,downloads
+play_market_games,Game,273,Decor Life - Home Design Game,Games,Offline,Stylized games,5000,4.5,900000,100000000
+play_market_games,Game,276,Gold & Goblins: Idle Merger,Games,Mine,Stylized games,5000,4.0,458000,10000000
+play_market_games,Game,120,1945 Air Force: Airplane Games,Games,Offline,Explore games on PC,5000,4.8,4080000,100000000
+play_market_games,Game,116,Worms Zone .io - Hungry Snake,Games,Offline,Explore games on PC,5000,4.2,3090000,500000000
+play_market_games,Game,114,FINAL FANTASY BE:WOTV,Games,Fantasy,Explore games on PC,5000,3.8,117000,1000000
+play_market_games,Game,112,Top War: Battle Game,Games,Beach,Explore games on PC,5000,3.2,714000,50000000
+play_market_games,Game,261,Bullet Echo: PVP Shooter,Games,Science fiction,Shooter games,5000,4.5,755000,10000000
+play_market_games,Game,147,Summoners War,Games,Isekai,Explore games on PC,5000,4.1,2360000,50000000
+play_market_games,Game,149,King's Throne: Royal Delights,Games,Palace,Explore games on PC,5000,4.2,601000,5000000
+play_market_games,Game,150,CookieRun: Kingdom,Games,Cooking,Explore games on PC,5000,4.8,1260000,10000000
+play_market_games,Game,254,Words of Wonders: Crossword,Games,Offline,Realistic Games,5000,4.9,5520000,100000000
+play_market_games,Game,50,Robbery Bob 2: Double Trouble,Games,Offline,Cartoony games,5000,4.4,1000000,100000000
+play_market_games,Game,51,Kick the Buddy－Fun Action Game,Games,Play Pass,Casual games,5000,4.2,3530000,100000000
+play_market_games,Game,104,WorldBox - Sandbox God Sim,Games,Offline,Casual games,5000,4.6,767000,10000000
+play_market_games,Game,53,Supreme Duelist,Games,Offline,Casual games,5000,4.6,1890000,100000000
+play_market_games,Game,54,Happy Color®: Coloring Book,Games,Offline,Casual games,5000,4.6,3620000,100000000
+play_market_games,Game,100,Goods Puzzle: Sort Challenge™,Games,Offline,Casual games,5000,4.7,315000,10000000
+play_market_games,Game,99,Bubble POP GO! Puzzle Game,Games,Offline,Casual games,5000,4.5,32600,10000000
+play_market_games,Game,57,Pou,Games,Offline,Casual games,5000,4.3,12000000,1000000000
+play_market_games,Game,156,Golf King - World Tour,Games,Field,Explore games on PC,5000,4.6,656000,10000000
+play_market_games,Game,157,Rise of Castles: Ice and Fire,Games,History,Explore games on PC,5000,4.5,1830000,10000000
+play_market_games,Game,160,Bricks Breaker Quest,Games,Play Pass,Explore games on PC,5000,4.3,593000,100000000
+play_market_games,Game,161,Klondike Adventures: Farm Game,Games,City,Explore games on PC,5000,4.6,1300000,50000000
+play_market_games,Game,250,Blockudoku®: Block Puzzle Game,Games,Offline,Puzzle games,5000,4.3,1160000,100000000
+play_market_games,Game,163,Hungry Shark Evolution,Games,Play Pass,Explore games on PC,5000,4.5,7620000,500000000
+play_market_games,Game,2,Word Collect - Word Games Fun,Games,Offline,Abstract graphics,5000,4.7,588000,10000000
+play_market_games,Game,246,My Talking Tom,Games,Offline,Pet simulation games,5000,4.2,17800000,1000000000
+play_market_games,Game,183,Hero Wars: Alliance,Games,History,Fantasy setting games,5000,4.6,1650000,100000000
+play_market_games,Game,184,MARVEL Puzzle Quest: Match RPG,Games,Super heroes,Fantasy setting games,5000,4.2,371000,10000000
+play_market_games,Game,221,Lemmings: Puzzle Survival,Games,Offline,Logic games,5000,4.2,172000,5000000
+play_market_games,Game,198,Sky: Children of the Light,Games,Fantasy,Indie Corner,5000,4.5,1090000,10000000
+play_market_games,Game,275,Snake.io - Fun Snake .io Games,Games,Offline,Stylized games,5000,4.3,1160000,100000000
+play_market_games,Game,142,Rise of Kingdoms: Lost Crusade,Games,Stylized,Explore games on PC,5000,4.5,2470000,50000000
+play_market_games,Game,123,Lords Mobile: Kingdom Wars,Games,Medieval fantasy,Explore games on PC,5000,4.5,8990000,500000000
+play_market_games,Game,125,Magic Rush: Heroes,Games,Fantasy,Explore games on PC,5000,4.2,1130000,10000000
+play_market_games,Game,3,Tap Away,Games,Offline,Abstract graphics,5000,4.3,1130000,50000000
+play_market_games,Game,4,Sudoku - Classic Sudoku Puzzle,Games,Offline,Abstract graphics,5000,4.7,2650000,50000000
+play_market_games,Game,139,Free Fire MAX,Games,Battling,Explore games on PC,5000,4.4,26500000,500000000
+play_market_games,Game,332,Dark War Survival,Games,Apocalyptic,Zombie games,5000,4.3,534000,10000000
+play_market_games,Game,279,Tower War - Tactical Conquest,Games,Offline,Stylized games,5000,4.4,561000,50000000
+play_market_games,Game,278,Kick the Buddy: Second Kick,Games,Offline,Stylized games,5000,4.4,1120000,100000000
+play_market_games,Game,277,My Talking Angela 2,Games,Offline,Stylized games,5000,4.3,2840000,100000000
+play_market_games,Game,15,Ludo King®,Games,Board games,Browse popular games,5000,4.2,10100000,1000000000
+play_market_games,Game,16,Evertale,Games,Travel,Browse popular games,5000,4.6,541000,10000000
+play_market_games,Game,17,eFootball™,Games,Athlete,Browse popular games,5000,3.9,15200000,100000000
+play_market_games,Game,18,Dream League Soccer 2025,Games,Offline,Browse popular games,5000,4.4,11500000,100000000
+play_market_games,Game,31,MARVEL Strike Force: Squad RPG,Games,Super heroes,Browse popular games,5000,4.3,711000,50000000
+play_market_games,Game,20,Genshin Impact,Games,Explorer,Browse popular games,5000,3.3,4920000,100000000
+play_market_games,Game,127,Hustle Castle: Medieval games,Games,Renovation,Explore games on PC,5000,4.1,1470000,50000000
+play_market_games,Game,19,Match Masters,Games,Connect,Browse popular games,5000,4.8,2350000,50000000
+play_market_games,Game,23,Geometry Dash Lite,Games,Offline,Browse popular games,5000,4.4,7670000,500000000
+play_market_games,Game,30,Last War:Survival Game,Games,Zombie,Browse popular games,5000,4.6,1050000,50000000
+play_market_games,Game,143,State of Survival: Zombie War,Games,Zombie,Explore games on PC,5000,4.3,2310000,50000000
+play_market_games,Game,25,Pokémon TCG Pocket - Card Game,Games,Stylized,Browse popular games,5000,4.5,1350000,10000000
+play_market_games,Game,26,Frost & Flame: King of Avalon,Games,Medieval fantasy,Browse popular games,5000,4.3,1210000,50000000
+play_market_games,Game,27,Whiteout Survival,Games,Immersive,Browse popular games,5000,4.4,1170000,50000000
+play_market_games,Game,28,Geometry Dash,Games,Fantasy,Browse popular games,5000,4.8,1010000,5000000
+play_market_games,Game,29,Puzzles & Survival,Games,Science fiction,Browse popular games,5000,4.5,320000,10000000
+play_market_games,Game,255,My Home Design - Modern City,Games,Offline,Realistic Games,4959,4.6,631000,50000000
+play_market_games,Game,148,Just Dance Now,Games,Dancing,Explore games on PC,4940,3.9,1150000,50000000
+play_market_games,Game,118,OTR - Offroad Car Driving Game,Games,Offline,Explore games on PC,4935,4.5,496000,50000000
+play_market_games,Game,140,Day R Survival: Last Survivor,Games,Offline,Explore games on PC,4931,4.4,734000,10000000
+play_market_games,Game,207,The Battle of Polytopia,Games,Play Pass,Indie Corner,4921,4.4,232000,10000000
+play_market_games,Game,258,Bit Heroes Quest: Pixel RPG,Games,Smash & beat,Role playing games,4895,4.3,285000,5000000
+play_market_games,Game,113,Ronin: The Last Samurai,Games,Eastern fantasy,Explore games on PC,4881,4.6,341000,10000000
+play_market_games,Game,136,Last Fortress: Underground,Games,Apocalyptic,Explore games on PC,4860,3.8,427000,10000000
+play_market_games,Game,218,"Good Coffee, Great Coffee",Games,Offline,Indie Corner,4810,4.5,88500,5000000
+play_market_games,Game,131,Pirates of the Caribbean: ToW,Games,Beach,Explore games on PC,4792,4.4,209000,10000000
+play_market_games,Game,252,Drive Zone: Car Simulator Game,Games,Car,Racing games,4762,4.1,154000,50000000
+play_market_games,Game,133,Age of Apes,Games,Monkey,Explore games on PC,4757,4.6,1030000,50000000
+play_market_games,Game,6,"NYT Games: Word, Number, Logic",Games,Offline,Abstract graphics,4755,4.7,76200,5000000
+play_market_games,Game,1,Geometry Dash SubZero,Games,Offline,Abstract graphics,4754,4.5,926000,100000000
+play_market_games,Game,251,No Limit Drag Racing 2,Games,Offline,Racing games,4741,4.1,87000,10000000
+play_market_games,Game,141,Left to Survive: Zombie Games,Games,Zombie,Explore games on PC,4720,4.5,624000,50000000
+play_market_games,Game,267,Solitaire Dragons,Games,Offline,Solitaire games,4660,4.6,179000,5000000
+play_market_games,Game,155,Idle Mafia - Tycoon Manager,Games,City,Explore games on PC,4651,4.5,292000,10000000
+play_market_games,Game,259,Mr Autofire,Games,Offline,"Run, jump, run!",4628,4.5,111000,5000000
+play_market_games,Game,52,Sudoku - Classic Sudoku Puzzle,Games,Offline,Casual games,4618,4.8,463000,10000000
+play_market_games,Game,21,Five Nights at Freddy's,Games,Horror,Browse popular games,4558,4.7,157000,1000000
+play_market_games,Game,223,Triple Tile: Match Puzzle Game,Games,Offline,Match-3 games,4507,4.8,975000,50000000
+play_market_games,Game,117,War and Peace: Civil War,Games,Battling,Explore games on PC,4481,4.3,128000,5000000
+play_market_games,Game,154,Island War,Games,Battling,Explore games on PC,4389,4.3,166000,10000000
+play_market_games,Game,256,The Legend of Neverland,Games,Anime,Role playing games,4355,4.4,205000,10000000
+play_market_games,Game,22,Total Battle: War Strategy,Games,Battling,Browse popular games,4323,4.4,233000,10000000
+play_market_games,Game,122,Pixel Starships™,Games,Sci-fi fantasy,Explore games on PC,4168,4.5,95900,1000000
+play_market_games,Game,5,Woodber - Classic Number Game,Games,Offline,Abstract graphics,4088,4.6,225000,10000000
+play_market_games,Game,135,Cubes Empire Champions,Games,Offline,Explore games on PC,4080,4.9,126000,10000000
+play_market_games,Game,137,War and Magic: Kingdom Reborn,Games,Medieval fantasy,Explore games on PC,3922,4.3,378000,10000000
+play_market_games,Game,32,MONOPOLY,Games,Board games,Browse popular games,3900,4.2,135000,1000000
+play_market_games,Game,159,Eversoul,Games,Immersive,Explore games on PC,3848,4.4,84700,1000000
+play_market_games,Game,130,Battle Night: Cyberpunk RPG,Games,Sci-fi fantasy,Explore games on PC,3650,4.6,104000,1000000
+play_market_games,Game,333,Idle Outpost: Upgrade Games,Games,Offline,Zombie games,3631,4.1,97000,10000000
+play_market_games,Game,121,Wild Castle: Tower Defense TD,Games,Offline,Explore games on PC,3615,4.8,517000,5000000
+play_market_games,Game,129,Cafe Panic: Cooking games,Games,Play Pass,Explore games on PC,3483,4.6,157000,10000000
+play_market_games,Game,61,TDS - Tower Destiny Survive,Games,Offline,Casual games,3467,4.5,131000,10000000
+play_market_games,Game,103,Dye Hard - Color War,Games,Gun,Casual games,3396,4.5,104000,50000000
+play_market_games,Game,55,Top Troops: Adventure RPG,Games,Army,Casual games,3369,3.9,66300,1000000
+play_market_games,Game,128,Valor Legends: Idle RPG,Games,Medieval fantasy,Explore games on PC,3242,3.4,180000,5000000
+play_market_games,Game,126,Empire Takeover,Games,Offline,Explore games on PC,3193,4.5,230000,5000000
+play_market_games,Game,119,Zen Koi 2,Games,Pool,Explore games on PC,3137,4.5,74000,5000000
+play_market_games,Game,24,Legend of Mushroom,Games,Stylized,Browse popular games,3109,4.4,86500,5000000
+play_market_games,Game,249,Differences - Find Difference,Games,Offline,Puzzle games,3029,4.8,245000,10000000
+play_market_games,Game,146,Religion Inc. The game god sim,Games,Offline,Explore games on PC,2980,4.3,107000,5000000
+play_market_games,Game,212,Reigns,Games,Play Pass,Indie Corner,2921,4.5,148000,1000000
+play_market_games,Game,245,My Cat - Virtual pet simulator,Games,Offline,Pet simulation games,2869,4.4,177000,50000000
+play_market_games,Game,192,Monument Valley 2,Games,Play Pass,Indie Corner,2861,4.9,75500,1000000
+play_market_games,Game,253,Big Rig Racing: Drag racing,Games,Driving,Racing games,2831,4.6,93000,5000000
+play_market_games,Game,280,The Godfather: Family Dynasty,Games,Battling,Stylized games,2772,4.4,125000,1000000
+play_market_games,Game,272,One State RP - Role Play Life,Games,Car,Stylized games,2759,4.0,63800,10000000
+play_market_games,Game,268,Battle Strategy: Tower Defense,Games,Offline,Strategy games,2716,4.5,95600,1000000
+play_market_games,Game,138,Mahjong Village,Games,Offline,Explore games on PC,2570,4.5,81100,5000000
+play_market_games,Game,260,Chaos Road: Combat Car Racing,Games,Offline,Shooter games,2566,4.5,93700,10000000
+play_market_games,Game,274,Rollance : Adventure Balls,Games,Offline,Stylized games,2563,4.2,57000,50000000
+play_market_games,Game,334,Zombie.io - Shooting RPG,Games,Zombie,Zombie games,2537,4.4,86500,1000000
+play_market_games,Game,7,Qblock: Wood Block Puzzle Game,Games,Offline,Abstract graphics,2520,4.5,1040000,100000000
+play_market_games,Game,203,Dungeons of Dreadrock,Games,Play Pass,Indie Corner,2477,4.2,43000,1000000
+play_market_games,Game,164,Open House: Match 3 puzzles,Games,Offline,Explore games on PC,2457,4.6,78900,5000000
+play_market_games,Game,248,Tizi Princess Home Design Game,Games,Offline,Pretend play games,2446,4.5,103000,50000000
+play_market_games,Game,132,Tower Defense: Towerlands (TD),Games,Offline,Explore games on PC,2399,4.2,50700,1000000
+play_market_games,Game,151,Undersea Solitaire Tripeaks,Games,Offline,Explore games on PC,2383,4.6,45500,1000000
+play_market_games,Game,220,Meow Tower: Nonogram (Offline),Games,Offline,Logic games,2221,4.8,126000,1000000
+play_market_games,Game,257,Immortal Awakening,Games,Monster,Role playing games,2166,4.4,69600,1000000
+play_market_games,Game,201,Leo's Fortune,Games,Play Pass,Indie Corner,2100,4.6,67100,500000
+play_market_games,Game,197,Cookies Must Die,Games,Play Pass,Indie Corner,2030,4.4,44000,1000000
+play_market_games,Game,166,Turnip Boy Commits Tax Evasion,Games,Play Pass,Explore games on PC,1982,4.6,25500,500000
+play_market_games,Game,162,DesignVille: Merge & Design,Games,Offline,Explore games on PC,1800,4.6,61300,5000000
+play_market_games,Game,144,Among Gods! RPG Adventure,Games,Fantasy,Explore games on PC,1754,4.6,68400,1000000
+play_market_games,Game,270,Nightfall: Kingdom Frontier TD,Games,Offline,Strategy games,1594,4.8,45500,1000000
+play_market_games,Game,59,Woodoku Blast,Games,Offline,Casual games,1584,4.9,117000,1000000
+play_market_games,Game,208,Balatro,Games,Realistic,Indie Corner,1584,4.8,14800,500000
+play_market_games,Game,194,Florence,Games,Offline,Indie Corner,1545,4.7,15300,100000
+play_market_games,Game,56,Fruit Diary - Match 3 Games,Games,Offline,Casual games,1543,4.7,102000,10000000
+play_market_games,Game,190,DARK AND DARKER MOBILE,Games,Stylized,Indie Corner,1525,3.4,2640,500000
+play_market_games,Game,134,Idol Queens Production,Games,Anime,Explore games on PC,1489,3.8,12300,500000
+play_market_games,Game,110,Office Cat: Idle Tycoon Games,Games,Offline,Cat games,1480,4.7,388000,5000000
+play_market_games,Game,158,Ten Crush,Games,Offline,Explore games on PC,1480,4.7,31400,1000000
+play_market_games,Game,214,The White Door,Games,Offline,Indie Corner,1422,4.6,9880,100000
+play_market_games,Game,188,The Past Within,Games,Play Pass,Indie Corner,1402,4.8,43500,100000
+play_market_games,Game,145,Basketrio：Allstar Streetball,Games,Sports,Explore games on PC,1383,4.2,5000,100000
+play_market_games,Game,271,Tile Explorer - Triple Match,Games,Offline,Stylized games,1319,4.9,239000,10000000
+play_market_games,Game,102,Dice Dreams™️,Games,Construction,Casual games,1259,4.7,1800000,50000000
+play_market_games,Game,335,Zombie Hunt: Apocalypse Games,Games,Offline,Zombie games,1241,4.9,50100,5000000
+play_market_games,Game,199,Thimbleweed Park,Games,Play Pass,Indie Corner,1226,4.6,7400,100000
+play_market_games,Game,269,Grand War 2: Strategy Games,Games,Offline,Strategy games,983,4.7,14900,500000
+play_market_games,Game,115,Braveland Heroes,Games,History,Explore games on PC,976,4.5,38400,1000000
+play_market_games,Game,101,Galaxiga: Space Arcade Shooter,Games,Offline,Casual games,940,4.7,423000,50000000
+play_market_games,Game,216,Idle Pocket Planet,Games,Offline,Indie Corner,878,4.4,11400,1000000
+play_market_games,Game,231,Deadly Dudes,Games,Stylized,Newly launched games,877,4.3,6800,100000
+play_market_games,Game,60,Killer Sudoku - Sudoku Puzzle,Games,Offline,Casual games,839,4.6,13200,1000000
+play_market_games,Game,167,Grimvalor,Games,Play Pass,Explore games on PC,773,4.7,121000,5000000
+play_market_games,Game,124,Soul Seeker: Six Knights,Games,Anime,Explore games on PC,765,3.9,20500,500000
+play_market_games,Game,247,Hunter Raid: Idle RPG Games,Games,Monster,Pixelated games,764,4.5,30600,1000000
+play_market_games,Game,262,Jurassic World™: The Game,Games,Dinosaur,Simulation games,760,4.2,1880000,50000000
+play_market_games,Game,238,Real Cricket Swipe,Games,Stylized,Newly launched games,735,3.8,2540,1000000
+play_market_games,Game,217,K-Pop Academy,Games,Offline,Indie Corner,731,4.2,7750,1000000
+play_market_games,Game,241,Idle Weapon Shop,Games,Apocalyptic,Newly launched games,711,4.5,15600,1000000
+play_market_games,Game,196,GRIS,Games,Play Pass,Indie Corner,698,4.1,7060,100000
+play_market_games,Game,152,Dungeon Knight,Games,Battling,Explore games on PC,693,4.2,37100,1000000
+play_market_games,Game,232,E.T.E Chronicle,Games,Science fiction,Newly launched games,682,4.5,10900,100000
+play_market_games,Game,222,Toy Match 3D: Triple Match,Games,Offline,Match-3 games,617,4.5,5800,500000
+play_market_games,Game,235,Pondlife — Relaxing Fish Game,Games,Cute,Newly launched games,576,4.5,3230,100000
+play_market_games,Game,234,Lands of Jail,Games,Stylized,Newly launched games,576,4.5,28900,1000000
+play_market_games,Game,195,The Abandoned Planet,Games,Play Pass,Indie Corner,574,4.1,4300,500000
+play_market_games,Game,227,Dopples World,Games,Cartoon,Newly launched games,434,3.8,5620,1000000
+play_market_games,Game,224,Tales of Wind: Radiant Rebirth,Games,Eastern fantasy,Newly launched games,421,4.6,5500,100000
+play_market_games,Game,191,Dicey Dungeons,Games,Stylized,Indie Corner,402,4.4,1670,100000
+play_market_games,Game,202,Ordia,Games,Play Pass,Indie Corner,399,4.5,3150,100000
+play_market_games,Game,210,Superliminal,Games,Play Pass,Indie Corner,336,4.2,3140,500000
+play_market_games,Game,215,purple,Games,Logic,Indie Corner,323,4.6,1900,100000
+play_market_games,Game,226,Simon's Cat Match!,Games,Offline,Newly launched games,317,4.9,2290,100000
+play_market_games,Game,165,Ski Resort: Idle Tycoon & Snow,Games,Offline,Explore games on PC,314,4.2,15000,100000
+play_market_games,Game,204,The Vault: Logic Puzzle Box,Games,Puzzle,Indie Corner,291,4.7,4590,100000
+play_market_games,Game,230,Frozen War: Endless Frost,Games,Competitive,Newly launched games,253,4.5,5400,100000
+play_market_games,Game,228,Lucky Offense,Games,Stylized,Newly launched games,242,4.2,11400,500000
+play_market_games,Game,189,Endless Nightmare 6: Reborn,Games,Anime,Indie Corner,242,4.5,4520,100000
+play_market_games,Game,244,Kitty’s Kitchen Diary,Games,Cat,Newly launched games,221,4.2,3390,100000
+play_market_games,Game,200,Delicious: The First Course,Games,Casual,Indie Corner,219,4.7,2830,100000
+play_market_games,Game,153,기적의 검,Games,Isekai,Explore games on PC,207,4.3,276000,1000000
+play_market_games,Game,186,Shadow of the Depth,Games,Monster,Indie Corner,175,4.2,3150,100000
+play_market_games,Game,205,"Please, Touch The Artwork",Games,Play Pass,Indie Corner,163,3.9,836,100000
+play_market_games,Game,13,Word Search: Word Puzzle Games,Games,Offline,Be the first to play,157,4.8,3190,500000
+play_market_games,Game,8,World of Kungfu: Dragon&Eagle,Games,Role Playing,Be the first to play,144,4.7,2380,100000
+play_market_games,Game,242,Element Fission,Games,Turn-based RPG,Newly launched games,130,4.1,704,100000
+play_market_games,Game,240,Adorable Garden,Games,Simulation,Newly launched games,119,4.7,1280,100000
+play_market_games,Game,233,Mythical Odyssey: Nezha Reborn,Games,Stylized,Newly launched games,113,4.5,6700,100000
+play_market_games,Game,239,Word Bend,Games,Offline,Newly launched games,85,4.9,545,50000
+play_market_games,Game,229,Idle Airport Empire,Games,Offline,Newly launched games,82,4.5,3290,100000
+play_market_games,Game,12,Hexa Run: Hexa Puzzle Game,Games,Puzzle,Be the first to play,72,4.9,1940,100000
+play_market_games,Game,206,Shadow Trick,Games,Action,Indie Corner,59,4.0,600,50000
+play_market_games,Game,9,Pocket Hockey Stars,Games,Sports,Be the first to play,53,2.5,160,10000
+play_market_games,Game,213,Brewtopia: Grow Coffee Beans,Games,Stylized,Indie Corner,50,3.3,315,50000
+play_market_games,Game,236,Ash N Veil : Fast Idle Action,Games,Monster,Newly launched games,36,3.2,1890,100000
+play_market_games,Game,209,Vampire: The Masquerade - CoNY,Games,Adventure,Indie Corner,35,4.0,243,1000
+play_market_games,Game,14,Number Match Game - Ten & Pair,Games,Puzzle,Be the first to play,33,4.8,807,100000
+play_market_games,Game,187,LEVELS II,Games,Puzzle,Indie Corner,33,4.7,438,10000
+play_market_games,Game,11,Number Match - Number Game,Games,Puzzle,Be the first to play,30,5.0,871,50000
+play_market_games,Game,193,Electric Blue: Gecko dash!,Games,Casual,Indie Corner,29,4.2,191,500000
+play_market_games,Game,237,Birds Camp——Casual TD Game,Games,Casual,Newly launched games,25,4.7,655,50000
+play_market_games,Game,219,Zoo Restaurant,Games,Cartoon,Indie Corner,23,4.4,321,10000
+play_market_games,Game,10,Cooking Blitz: Restaurant Game,Games,Simulation,Be the first to play,18,4.4,147,10000
+play_market_games,Game,185,imago - Card Guessing Game,Games,Single player,Indie Corner,17,4.5,211,10000
+play_market_games,Game,58,Skat Treff: Werde Skat Meister,Games,Realistic,Casual games,16,3.3,16300,100000
+play_market_games,Game,225,Shambles: Sons of Apocalypse,Games,Strategy,Newly launched games,15,4.7,184,1000
+play_market_games,Game,243,Sloppy Capy Life,Games,Simulation,Newly launched games,13,4.8,2100,100000
+play_market_games,Game,211,Running Fable,Games,Play Pass,Indie Corner,10,3.6,58,10000
+play_market_games,Game,291,Puzzle Breakers: Champions War,Games,Fantasy,Stylized games,0,3.9,55600,1000000
+play_market_games,Game,290,Madoka Magica Magia Exedra,Games,Fantasy,Stylized games,0,4.1,4920,100000
+play_market_games,Game,294,Sonic Forces: PvP Battle Race,Games,Fantasy,Stylized games,0,4.5,1040000,100000000
+play_market_games,Game,292,Gacha Life,Games,Offline,Stylized games,0,4.4,3840000,100000000
+play_market_games,Game,293,Offline Games - No Wifi Games,Games,Offline,Stylized games,0,4.6,263000,100000000
+play_market_games,Game,288,Solo Leveling:Arise,Games,Anime,Stylized games,0,4.2,679000,10000000
+play_market_games,Game,295,Scrabble® GO-Classic Word Game,Games,Board games,Stylized games,0,4.3,528000,10000000
+play_market_games,Game,296,Coffee Mania - Sorting Jam,Games,Offline,Stylized games,0,4.6,36900,1000000
+play_market_games,Game,297,Space shooter - Galaxy attack,Games,Offline,Stylized games,0,4.8,1780000,100000000
+play_market_games,Game,289,Hill Climb Racing 2,Games,Car,Stylized games,0,4.5,4660000,100000000
+play_market_games,Game,284,Domino Dreams™,Games,Offline,Stylized games,0,4.8,527000,10000000
+play_market_games,Game,287,100+ Offline Games No WiFi Fun,Games,Offline,Stylized games,0,4.5,331000,50000000
+play_market_games,Game,286,Bingo Blitz™️ - Bingo Games,Games,Modern,Stylized games,0,4.7,1340000,50000000
+play_market_games,Game,285,Extreme Car Driving Simulator,Games,Offline,Stylized games,0,4.3,4680000,500000000
+play_market_games,Game,299,Galaxy Attack: Shooting Game,Games,Offline,Stylized games,0,4.7,2520000,100000000
+play_market_games,Game,283,Sonic Dash Endless Runner Game,Games,Offline,Stylized games,0,4.7,6460000,100000000
+play_market_games,Game,282,Avatar: Realms Collide,Games,Anime,Stylized games,0,4.3,8500,1000000
+play_market_games,Game,281,Candy Crush Solitaire,Games,Stylized,Stylized games,0,4.6,28800,1000000
+play_market_games,Game,109,Traffic Rider,Games,Offline,Casual games,0,4.4,8740000,500000000
+play_market_games,Game,33,RFS - Real Flight Simulator,Games,Flying,Browse popular games,0,4.3,184000,5000000
+play_market_games,Game,34,Magic Tiles 3™ - Piano Game,Games,Offline,Browse popular games,0,4.5,3300000,500000000
+play_market_games,Game,35,Roblox,Games,Crafting,Browse popular games,0,4.5,42800000,1000000000
+play_market_games,Game,36,DRAGON BALL LEGENDS,Games,Battling,Browse popular games,0,4.4,2040000,50000000
+play_market_games,Game,37,Subway Princess Runner,Games,Offline,Browse popular games,0,4.3,1830000,500000000
+play_market_games,Game,38,RAID: Shadow Legends,Games,Competitive,Browse popular games,0,4.6,2130000,50000000
+play_market_games,Game,39,Woodoku - Wood Block Puzzle,Games,Offline,Browse popular games,0,4.2,452000,100000000
+play_market_games,Game,298,Brain Test: Tricky Puzzles,Games,Offline,Stylized games,0,4.7,8740000,100000000
+play_market_games,Game,304,Screw Master 3D: Pin Puzzle,Games,Offline,Stylized games,0,3.0,41200,5000000
+play_market_games,Game,300,Word Chain,Games,Offline,Stylized games,0,4.9,7570,500000
+play_market_games,Game,325,Match Factory!,Games,Offline,Stylized games,0,4.7,363000,10000000
+play_market_games,Game,319,Snake Clash!,Games,Offline,Stylized games,0,4.5,675000,50000000
+play_market_games,Game,320,Crossy Road,Games,Offline,Stylized games,0,4.4,4560000,100000000
+play_market_games,Game,321,Toon Blast,Games,Offline,Stylized games,0,4.6,4300000,100000000
+play_market_games,Game,322,Blood Strike - FPS for all,Games,Gun,Stylized games,0,4.3,760000,50000000
+play_market_games,Game,323,Avatar Life World: My Story,Games,Cartoon,Stylized games,0,4.5,48500,10000000
+play_market_games,Game,324,Paint by Number: Coloring Game,Games,Offline,Stylized games,0,4.7,1840000,100000000
+play_market_games,Game,326,Royal Cooking - Cooking Game,Games,Offline,Stylized games,0,4.7,403000,10000000
+play_market_games,Game,301,Truck Star,Games,Offline,Stylized games,0,4.6,233000,10000000
+play_market_games,Game,327,Tile Club - Match Puzzle Game,Games,Offline,Stylized games,0,4.9,461000,50000000
+play_market_games,Game,328,Screwdom 3D,Games,Offline,Stylized games,0,4.6,139000,5000000
+play_market_games,Game,329,Gossip Harbor: Merge & Story,Games,Cafe & restaurant,Stylized games,0,4.6,297000,10000000
+play_market_games,Game,330,Livetopia: Party!,Games,City,Stylized games,0,4.4,69200,10000000
+play_market_games,Game,331,Yatzy - Fun Classic Dice Game,Games,Offline,Stylized games,0,4.8,274000,5000000
+play_market_games,Game,111,The Battle Cats,Games,Offline,Cat games,0,4.5,584000,10000000
+play_market_games,Game,318,Plants vs. Zombies™,Games,Offline,Stylized games,0,4.0,5790000,500000000
+play_market_games,Game,317,Goddess Era: 2331 Draws,Games,Monster,Stylized games,0,4.4,113000,1000000
+play_market_games,Game,316,Sniper 3D：Gun Shooting Games,Games,Offline,Stylized games,0,4.6,17300000,500000000
+play_market_games,Game,315,Dice Yatzy - Classic Fun Game,Games,Dice,Stylized games,0,4.7,12100,500000
+play_market_games,Game,314,Doomsday: Last Survivors,Games,Apocalyptic,Stylized games,0,4.5,2220000,50000000
+play_market_games,Game,313,Royal Kingdom,Games,Offline,Stylized games,0,4.6,267000,10000000
+play_market_games,Game,312,Race Master 3D: Car Racing,Games,Offline,Stylized games,0,4.5,2770000,100000000
+play_market_games,Game,311,Match Villains,Games,Stylized,Stylized games,0,4.5,24700,500000
+play_market_games,Game,310,Block Blast!,Games,Offline,Stylized games,0,4.9,1560000,100000000
+play_market_games,Game,309,Zen Color - Color By Number,Games,Offline,Stylized games,0,4.7,171000,10000000
+play_market_games,Game,308,Vita Mahjong,Games,Offline,Stylized games,0,4.9,2020000,50000000
+play_market_games,Game,307,Minion Rush: Running Game,Games,Offline,Stylized games,0,4.3,10700000,500000000
+play_market_games,Game,306,All in Hole,Games,Stylized,Stylized games,0,4.8,55000,1000000
+play_market_games,Game,305,Idle Death Tycoon: Money Inc.,Games,Offline,Stylized games,0,4.6,37500,1000000
+play_market_games,Game,40,Stickman Party 234 MiniGames,Games,Offline,Browse popular games,0,4.6,2420000,100000000
+play_market_games,Game,303,That's My Seat - Logic Puzzle,Games,Offline,Stylized games,0,4.7,16200,1000000
+play_market_games,Game,302,Animals & Coins Adventure Game,Games,Animals,Stylized games,0,4.8,644000,10000000
+play_market_games,Game,108,Mahjong Epic,Games,Play Pass,Casual games,0,4.7,413000,5000000
+play_market_games,Game,42,Township,Games,Farm,Browse popular games,0,4.8,12000000,100000000
+play_market_games,Game,41,Triple Match 3D,Games,Offline,Browse popular games,0,4.7,79700,10000000
+play_market_games,Game,75,Hunting Sniper,Games,Gun,Casual games,0,4.4,55700,1000000
+play_market_games,Game,170,Luna Re : Dimensional Watcher,Games,Monster,Explore games on PC,0,3.8,5490,100000
+play_market_games,Game,171,Blade Idle,Games,Warrior,Explore games on PC,0,4.2,79500,1000000
+play_market_games,Game,68,Solitaire,Games,Offline,Casual games,0,4.7,213000,10000000
+play_market_games,Game,172,Blackjack - World Tournament,Games,Single player,Explore games on PC,0,4.5,22700,1000000
+play_market_games,Game,69,Spider Solitaire: Card Games,Games,Play Pass,Casual games,0,4.6,726000,50000000
+play_market_games,Game,70,Spider Fighter 3: Action Game,Games,Offline,Casual games,0,4.5,623000,100000000
+play_market_games,Game,71,Sunshine Island : Farming Game,Games,Stylized,Casual games,0,4.7,104000,5000000
+play_market_games,Game,173,Drift Max Pro Car Racing Game,Games,Offline,Explore games on PC,0,4.7,2020000,100000000
+play_market_games,Game,174,WWE SuperCard - Wrestling Game,Games,Wrestling,Explore games on PC,0,4.4,641000,10000000
+play_market_games,Game,175,Hades' Star,Games,Sci-fi fantasy,Explore games on PC,0,3.5,49400,1000000
+play_market_games,Game,72,Saint Seiya Awakening: KOTZ,Games,Magic,Casual games,0,3.9,337000,10000000
+play_market_games,Game,73,Solar Smash,Games,Offline,Casual games,0,4.6,1610000,100000000
+play_market_games,Game,176,Zombeast: FPS Zombie Shooter,Games,Offline,Explore games on PC,0,4.8,229000,10000000
+play_market_games,Game,74,Idle Zombie Miner: Gold Tycoon,Games,Zombie,Casual games,0,4.1,114000,5000000
+play_market_games,Game,177,Horizon Chase – Arcade Racing,Games,Play Pass,Explore games on PC,0,4.2,297000,10000000
+play_market_games,Game,86,Cricket League,Games,Sports,Casual games,0,4.7,2390000,100000000
+play_market_games,Game,178,Top Eleven Be a Soccer Manager,Games,Stadium,Explore games on PC,0,4.5,6930000,100000000
+play_market_games,Game,76,Pixel Art - Color by Number,Games,Play Pass,Casual games,0,4.5,2420000,100000000
+play_market_games,Game,179,Avakin Life - 3D Virtual World,Games,Immersive,Explore games on PC,0,4.0,3400000,100000000
+play_market_games,Game,77,Dirt Bike Unchained: MX Racing,Games,Motorcycle,Casual games,0,4.3,28900,5000000
+play_market_games,Game,180,Bubble CoCo : Bubble Shooter,Games,Farm,Explore games on PC,0,4.6,150000,1000000
+play_market_games,Game,181,Evony: The King's Return,Games,Puzzles,Explore games on PC,0,4.1,790000,100000000
+play_market_games,Game,78,Angry Birds Friends,Games,Cute,Casual games,0,4.4,1330000,100000000
+play_market_games,Game,79,Wordscapes Solitaire,Games,Offline,Casual games,0,4.6,144000,1000000
+play_market_games,Game,182,War Planet Online: MMO Game,Games,Military,Explore games on PC,0,4.2,117000,10000000
+play_market_games,Game,85,Fishing Clash: Sport Simulator,Games,Beach,Casual games,0,4.7,1830000,100000000
+play_market_games,Game,80,Cooking World® Restaurant Game,Games,Offline,Casual games,0,4.8,28500,1000000
+play_market_games,Game,81,Real Boxing 2,Games,Competitive,Casual games,0,4.6,275000,10000000
+play_market_games,Game,84,Spider Solitaire,Games,Offline,Casual games,0,4.3,105000,10000000
+play_market_games,Game,82,My Perfect Hotel,Games,Offline,Casual games,0,4.5,1350000,100000000
+play_market_games,Game,169,Awaken: Chaos Era,Games,Medieval fantasy,Explore games on PC,0,4.3,72600,1000000
+play_market_games,Game,87,YAHTZEE With Buddies Dice Game,Games,Fantasy,Casual games,0,4.3,282000,10000000
+play_market_games,Game,266,Love Nikki-Dress UP Queen,Games,Fashion,Simulation games,0,4.2,456000,10000000
+play_market_games,Game,63,Tetris®,Games,Offline,Casual games,0,4.2,431000,10000000
+play_market_games,Game,265,Fairyscapes Adventure,Games,Peaceful,Simulation games,0,4.0,9630,500000
+play_market_games,Game,264,Joy Blast,Games,Offline,Simulation games,0,4.7,10100,1000000
+play_market_games,Game,263,BitLife - Life Simulator,Games,Offline,Simulation games,0,4.4,1240000,10000000
+play_market_games,Game,107,Hexa Sort,Games,Offline,Casual games,0,4.4,337000,10000000
+play_market_games,Game,83,Road Trip: Royal merge games,Games,Stylized,Casual games,0,4.6,40500,1000000
+play_market_games,Game,43,My Talking Tom 2,Games,Offline,Browse popular games,0,4.3,6370000,500000000
+play_market_games,Game,44,Family Island™ — Farming game,Games,History,Browse popular games,0,4.5,1610000,50000000
+play_market_games,Game,45,Age of Origins,Games,Military,Browse popular games,0,4.0,538000,50000000
+play_market_games,Game,46,Bloons TD 6,Games,Fantasy,Browse popular games,0,4.8,381000,5000000
+play_market_games,Game,47,Trivia Crack Premium Quiz Game,Games,Modern,Browse popular games,0,4.6,85700,500000
+play_market_games,Game,48,Space Shooter: Galaxy Attack,Games,Space,Browse popular games,0,4.5,46900,5000000
+play_market_games,Game,49,Wordscapes,Games,Offline,Browse popular games,0,4.3,1320000,100000000
+play_market_games,Game,106,Chainsaw Juice King: Idle Shop,Games,Stylized,Casual games,0,4.6,11900,1000000
+play_market_games,Game,62,Coin Master,Games,Viking,Casual games,0,4.7,10000000,100000000
+play_market_games,Game,64,Find It Out - Hidden Object,Games,Offline,Casual games,0,4.8,257000,10000000
+play_market_games,Game,88,QuizzLand. Quiz & Trivia game,Games,Fantasy,Casual games,0,4.8,1570000,100000000
+play_market_games,Game,65,Hole.io,Games,Destruct,Casual games,0,3.2,1210000,100000000
+play_market_games,Game,105,Solitaire Story - Ava's Manor,Games,Offline,Casual games,0,4.8,61500,1000000
+play_market_games,Game,66,Merge Studio: Fashion Makeover,Games,Offline,Casual games,0,4.4,113000,10000000
+play_market_games,Game,67,Solitaire 3D Fish,Games,Offline,Casual games,0,4.6,628000,10000000
+play_market_games,Game,98,Solitaire.com - Classic Cards,Games,Offline,Casual games,0,4.8,303000,10000000
+play_market_games,Game,97,Find The Cat - Spot It!,Games,Offline,Casual games,0,4.9,455000,10000000
+play_market_games,Game,96,Bowmasters: Archery Shooting,Games,Play Pass,Casual games,0,4.3,712000,100000000
+play_market_games,Game,95,Mortal Kombat,Games,Slice,Casual games,0,4.2,4570000,100000000
+play_market_games,Game,94,BASEBALL 9,Games,Offline,Casual games,0,4.6,441000,10000000
+play_market_games,Game,93,Antistress relaxing toy game,Games,Stylized,Casual games,0,4.2,87400,50000000
+play_market_games,Game,92,Aha World: Doll Dress-Up Game,Games,Offline,Casual games,0,4.6,163000,10000000
+play_market_games,Game,91,Crossword Master - Word Puzzle,Games,Offline,Casual games,0,4.6,169000,5000000
+play_market_games,Game,90,Train Miner: Idle Railway Game,Games,Low poly,Casual games,0,4.1,141000,10000000
+play_market_games,Game,89,Darts Club: PvP Multiplayer,Games,Competitive,Casual games,0,4.6,189000,10000000
+play_market_games,Game,168,Summoners War: Chronicles,Games,Fantasy,Explore games on PC,0,3.5,30500,1000000

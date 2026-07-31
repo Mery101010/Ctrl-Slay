@@ -1,0 +1,101 @@
+source,app_name,unified_category,review_count,app_key
+play_market_apps,Western Union Send Money Now,Finance & Payments,21462,1
+play_market_apps,Scanner Radio - Police Scanner,News & Magazines,19418,13
+play_market_apps,Yahoo Mail,Communication & Social,15000,17
+play_market_apps,Google Voice,Communication & Social,15000,140
+play_market_apps,IMDb: Movies & TV Shows,Entertainment & Media,15000,7
+play_market_apps,Taco Bell Fast Food & Delivery,Food & Drink,15000,57
+play_market_apps,Subway®,Food & Drink,15000,58
+play_market_apps,Domino's Pizza USA,Food & Drink,15000,176
+play_market_apps,DoorDash - Dasher,Productivity & Business,15000,15
+play_market_apps,Google Calendar,Productivity & Business,15000,56
+play_market_apps,"Nike: Shoes, Apparel & Stories",Shopping & Commerce,15000,97
+play_market_apps,Alibaba.com - B2B marketplace,Shopping & Commerce,15000,175
+play_market_apps,YouTube TV: Live TV & more,Entertainment & Media,14999,98
+play_market_apps,Realtor.com Real Estate & Rent,Lifestyle & Home,14885,137
+play_market_apps,Google One,Productivity & Business,14359,16
+play_market_apps,Workday,Productivity & Business,14055,55
+play_market_apps,Safeway Deals & Delivery,Shopping & Commerce,13996,10
+play_market_apps,Gauth: AI Study Companion,Education,13604,95
+play_market_apps,Google Wallet,Finance & Payments,13040,18
+play_market_apps,Smart Home Manager,Productivity & Business,12937,216
+play_market_apps,Talkie: Creative AI Community,Entertainment & Media,12740,177
+play_market_apps,Shop: All your favorite brands,Shopping & Commerce,12740,138
+play_market_apps,Google Play Games,Entertainment & Media,11879,141
+play_market_apps,"Linky AI: Chat, Play, Connect",Communication & Social,11217,139
+play_market_apps,Panda Express,Food & Drink,9961,9
+play_market_games,Decor Life - Home Design Game,Games,5000,273
+play_market_games,Gold & Goblins: Idle Merger,Games,5000,276
+play_market_games,1945 Air Force: Airplane Games,Games,5000,120
+play_market_games,Worms Zone .io - Hungry Snake,Games,5000,116
+play_market_games,FINAL FANTASY BE:WOTV,Games,5000,114
+play_market_games,Top War: Battle Game,Games,5000,112
+play_market_games,Bullet Echo: PVP Shooter,Games,5000,261
+play_market_games,Summoners War,Games,5000,147
+play_market_games,King's Throne: Royal Delights,Games,5000,149
+play_market_games,CookieRun: Kingdom,Games,5000,150
+play_market_games,Words of Wonders: Crossword,Games,5000,254
+play_market_games,Robbery Bob 2: Double Trouble,Games,5000,50
+play_market_games,Kick the Buddy－Fun Action Game,Games,5000,51
+play_market_games,WorldBox - Sandbox God Sim,Games,5000,104
+play_market_games,Supreme Duelist,Games,5000,53
+play_market_games,Happy Color®: Coloring Book,Games,5000,54
+play_market_games,Goods Puzzle: Sort Challenge™,Games,5000,100
+play_market_games,Bubble POP GO! Puzzle Game,Games,5000,99
+play_market_games,Pou,Games,5000,57
+play_market_games,Golf King - World Tour,Games,5000,156
+play_market_games,Rise of Castles: Ice and Fire,Games,5000,157
+play_market_games,Bricks Breaker Quest,Games,5000,160
+play_market_games,Klondike Adventures: Farm Game,Games,5000,161
+play_market_games,Blockudoku®: Block Puzzle Game,Games,5000,250
+play_market_games,Hungry Shark Evolution,Games,5000,163
+sealuzh_app_reviews,Google Play Services,Other,103535,com.google.android.gms
+sealuzh_app_reviews,Telegram,Communication & Social,22816,org.telegram.messenger
+sealuzh_app_reviews,PPSSPP Emulator,Games,9771,org.ppsspp.ppsspp
+sealuzh_app_reviews,FrostWire,Other,8867,com.frostwire.android
+sealuzh_app_reviews,Talkback,Other,7807,com.google.android.marvin.talkback
+sealuzh_app_reviews,Wikipedia,Education,5410,org.wikipedia
+sealuzh_app_reviews,OpenCamera,Photo & Video,3992,net.sourceforge.opencamera
+sealuzh_app_reviews,WordPress,Productivity & Business,3200,org.wordpress.android
+sealuzh_app_reviews,Authenticator2,Security & Privacy,2976,com.google.android.apps.authenticator2
+sealuzh_app_reviews,Orbot (Tor),Security & Privacy,2941,org.torproject.android
+sealuzh_app_reviews,Stardroid,Other,2861,com.google.android.stardroid
+sealuzh_app_reviews,Level,Games,2717,net.androgames.level
+sealuzh_app_reviews,Android,Other,2566,com.google.zxing.client.android
+sealuzh_app_reviews,Kerneladiutor,Security & Privacy,2485,com.grarak.kerneladiutor
+sealuzh_app_reviews,Acdisplay,Other,2479,com.achep.acdisplay
+sealuzh_app_reviews,Indiasatelliteweather,Weather,2459,com.shahul3d.indiasatelliteweather
+sealuzh_app_reviews,Smssync,Communication & Social,2423,com.zegoggles.smssync
+sealuzh_app_reviews,Pixeldungeon,Maps & Navigation,2407,com.watabou.pixeldungeon
+sealuzh_app_reviews,Ds4Droid,Other,2362,com.opendoorstudios.ds4droid
+sealuzh_app_reviews,Emulator,Games,2356,com.reicast.emulator
+sealuzh_app_reviews,Diskusage,Other,2343,com.google.android.diskusage
+sealuzh_app_reviews,Android,Maps & Navigation,2294,org.geometerplus.zlibrary.ui.android
+sealuzh_app_reviews,Muzei,Other,2239,net.nurik.roman.muzei
+sealuzh_app_reviews,Ringdroid,Other,2203,com.ringdroid
+sealuzh_app_reviews,Hostseditor,Security & Privacy,2183,com.nilhcem.hostseditor
+trustpilot,avadolearning.com,Education,100,avadolearning.com
+trustpilot,e-careers.com,Education,100,e-careers.com
+trustpilot,freecoursesinengland.co.uk,Education,100,freecoursesinengland.co.uk
+trustpilot,icslearn.co.uk,Education,100,icslearn.co.uk
+trustpilot,kaplan.co.uk,Education,100,kaplan.co.uk
+trustpilot,oxbridgehomelearning.uk,Education,100,oxbridgehomelearning.uk
+trustpilot,passmefast.co.uk,Education,100,passmefast.co.uk
+trustpilot,reddrivingschool.com,Education,100,reddrivingschool.com
+trustpilot,theknowledgeacademy.com,Education,100,theknowledgeacademy.com
+trustpilot,thettcgroup.com,Education,100,thettcgroup.com
+trustpilot,trinitycollege.com,Education,100,trinitycollege.com
+trustpilot,www.citylit.ac.uk,Education,100,www.citylit.ac.uk
+trustpilot,www.get-licensed.co.uk,Education,100,www.get-licensed.co.uk
+trustpilot,www.i-to-i.com,Education,100,www.i-to-i.com
+trustpilot,www.learndirect.com,Education,100,www.learndirect.com
+trustpilot,www.learningpeople.com,Education,100,www.learningpeople.com
+trustpilot,www.nationalintensive.com,Education,100,www.nationalintensive.com
+trustpilot,www.oneeducation.org.uk,Education,100,www.oneeducation.org.uk
+trustpilot,www.passngo.com,Education,100,www.passngo.com
+trustpilot,www.virtual-college.co.uk,Education,100,www.virtual-college.co.uk
+trustpilot,www.youngdriver.eu,Education,100,www.youngdriver.eu
+trustpilot,bookshop.blackwell.co.uk,Entertainment & Media,100,bookshop.blackwell.co.uk
+trustpilot,booksplea.se,Entertainment & Media,100,booksplea.se
+trustpilot,bootsphoto.com,Entertainment & Media,100,bootsphoto.com
+trustpilot,cewe.co.uk,Entertainment & Media,100,cewe.co.uk

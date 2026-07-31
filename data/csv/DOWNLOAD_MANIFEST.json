@@ -1,0 +1,23 @@
+{
+  "ok": [
+    "sealuzh/app_reviews -> sealuzh_app_reviews.csv",
+    "dmytrobuhai/play_market_2025_1m_reviews_500_titles -> play_market_*.csv",
+    "Kerassy/trustpilot-reviews-123k -> kerassy_trustpilot_reviews_123k.csv",
+    "Tobi-Bueck/customer-support-tickets -> tobi_bueck_customer_support_tickets.csv"
+  ],
+  "failed": [],
+  "skipped": [
+    {
+      "source": "mirzayasirabdullah07/customer-support-tickets-dataset-200k-records",
+      "reason": "Needs ~/.kaggle/kaggle.json (Kaggle API token)"
+    },
+    {
+      "source": "dmytrobuhai/play-market-2025-1m-reviews-500-titles",
+      "reason": "No Kaggle creds; used Hugging Face CSV mirror instead"
+    },
+    {
+      "source": "api.github.com issues+milestones",
+      "reason": "Needs a chosen app repo (owner/name)"
+    }
+  ]
+}

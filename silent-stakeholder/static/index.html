@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silent Stakeholder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="mark">SS</span>
+        <div>
+          <h1>Silent Stakeholder</h1>
+          <p id="subtitle">Western Union Mobile · ask about unmet needs</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span id="provider" class="pill">…</span>
+        <button id="btnAnalyze" class="btn ghost" type="button">Run analysis</button>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="chat-pane">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div class="composer">
+          <div class="suggestions" id="suggestions">
+            <button type="button" data-q="What are the top unmet needs?">Top needs</button>
+            <button type="button" data-q="Why is #1 ranked first?">Why #1?</button>
+            <button type="button" data-q="Which GitHub issues are closest to these gaps?">Roadmap gaps</button>
+            <button type="button" data-q="Show evidence for gap #1">Evidence #1</button>
+          </div>
+          <form id="form">
+            <input id="input" type="text" placeholder="Ask like a judge: Why is this a gap?" autocomplete="off" />
+            <button class="btn primary" type="submit">Ask</button>
+          </form>
+        </div>
+      </section>
+
+      <aside class="evidence-pane" id="evidencePane">
+        <h2>Evidence</h2>
+        <p class="hint">Pick a gap answer to load review IDs and roadmap links here.</p>
+        <div id="gapCard" class="gap-card empty">No gap focused yet.</div>
+        <div id="evidenceList" class="evidence-list"></div>
+      </aside>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

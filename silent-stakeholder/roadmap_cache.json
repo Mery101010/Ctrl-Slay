@@ -1,0 +1,147 @@
+[
+  {
+    "number": 9,
+    "title": "[Security] Month 1 SCA/PCI release checklist for Stabilize work",
+    "body": "## Why\nCross-cutting for all six months: every release ships with its own SCA/PCI review \u2014 especially payments and identity flows touched by Phase 1.\n\n## Scope (Month 1)\n- Checklist covering KYC capture/upload, auth changes, chat (PII in transcripts), analytics (no sensitive data leakage)\n- Threat notes for document images and verification status APIs\n- Sign-off required before Month 1 RC\n\n## Acceptance criteria\n- [ ] Checklist published in repo/docs and linked from each Month 1 feature PR template\n- [ ] At least one completed review artifact for the Month 1 RC\n- [ ] Open findings tracked with severity and owners\n\n## Labels\nSecurity \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "documentation",
+      "phase-1",
+      "month-1",
+      "security"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:45Z",
+    "updated_at": "2026-07-31T11:17:45Z",
+    "comments": 0
+  },
+  {
+    "number": 8,
+    "title": "[Instrumentation] Baseline funnel analytics for Phase 1 exit metrics",
+    "body": "## Why\nNeeded to prove Phase 1 impact before Phase 2 investment. Watch **app-store rating** and **KYC time-to-approve** weekly; regression supersedes new feature work.\n\n## Scope (Month 1)\nInstrument and dashboard:\n1. Onboarding drop-off by step\n2. KYC time-to-approve (submit \u2192 approve/reject) + time-in-stage\n3. Support ticket volume by category (incl. stuck transfer, KYC, login)\n4. Auth failure rate and Android crash-free sessions (support Reliability issues)\n\n## Acceptance criteria\n- [ ] Events defined, documented, and shipping in a release\n- [ ] Dashboards live for the three primary Phase 1 funnels\n- [ ] Weekly review ritual assigned (owner + channel)\n- [ ] Alerting when KYC median TTA or rating trends regress\n\n## Labels\nInstrumentation \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1",
+      "instrumentation"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:41Z",
+    "updated_at": "2026-07-31T11:17:41Z",
+    "comments": 0
+  },
+  {
+    "number": 7,
+    "title": "[Reliability] Stabilize Android app \u2014 crash and freeze triage",
+    "body": "## Why\nAndroid crash/freeze reports are called out in store reviews and undermine trust while KYC/support fixes ship.\n\n## Scope (Month 1)\n- Pull crashlytics / Play Vitals: top crash clusters by version and OS\n- Fix top crashers (ANRs, null refs, lifecycle, WebView/camera if tied to KYC)\n- Establish crash-free sessions baseline and weekly gate for releases\n- Smoke checklist for cold start, login, send money, KYC camera\n\n## Acceptance criteria\n- [ ] Top N crash clusters (agree N with eng lead; suggest top 5) addressed or mitigated\n- [ ] Crash-free sessions baseline documented; no regression on release candidates\n- [ ] Known freeze paths (esp. KYC camera / transfer confirm) retested on target devices\n\n## Labels\nReliability \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "bug",
+      "phase-1",
+      "month-1",
+      "reliability"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:37Z",
+    "updated_at": "2026-07-31T11:17:37Z",
+    "comments": 0
+  },
+  {
+    "number": 6,
+    "title": "[Reliability] Fix cross-border login and account-linking bugs",
+    "body": "## Why\nExplicitly called out in AU/EU Play Store reviews \u2014 login and account-linking failures block sending and amplify support volume.\n\n## Scope (Month 1)\n- Reproduce and catalog top login/account-linking failure modes (region switch, multi-device, SSO, phone/email mismatch)\n- Fix P0/P1 defects; add regression tests for affected auth paths\n- Improve error messaging (recoverable vs contact-support)\n- Add structured logging / funnel events for auth failures (no PII in cleartext)\n\n## Acceptance criteria\n- [ ] P0/P1 known login/account-linking bugs fixed or have documented workarounds with owners\n- [ ] Auth failure rate dashboard exists and is reviewed weekly\n- [ ] Regression coverage for fixed paths\n- [ ] Security review for any auth-flow changes\n\n## Labels\nReliability \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "bug",
+      "phase-1",
+      "month-1",
+      "reliability",
+      "security"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:32Z",
+    "updated_at": "2026-07-31T11:17:32Z",
+    "comments": 0
+  },
+  {
+    "number": 5,
+    "title": "[Support] Self-serve `why is my transfer delayed` diagnostic flow",
+    "body": "## Why\nMany delay inquiries are repetitive (compliance hold, payout partner hours, incorrect receiver details). A guided self-serve flow deflects tickets and sets accurate expectations.\n\n## Scope (Month 1)\n- Design diagnostic tree from transfer status + known delay reason codes\n- Implement in-app flow: select transfer \u2192 explain likely cause \u2192 next actions (wait window, edit details if allowed, contact support)\n- Deep-link to live chat only when self-serve cannot resolve\n- Cover top corridors / reason codes first; expand later\n\n## Acceptance criteria\n- [ ] User can open the flow from transfer tracking without leaving the app\n- [ ] Top reason codes produce plain-language explanations and next steps\n- [ ] Escalation to chat/ticket preserves diagnostic context\n- [ ] Deflection rate (flow completed without ticket) measurable\n\n## Labels\nSupport \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1",
+      "support"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:28Z",
+    "updated_at": "2026-07-31T11:17:28Z",
+    "comments": 0
+  },
+  {
+    "number": 4,
+    "title": "[Support] Restore/expand in-app live chat for stuck transfers",
+    "body": "## Why\nReviews repeatedly cite loss of human agents as a top frustration when transfers are stuck.\n\n## Scope (Month 1)\n- Inventory current chat entry points and where they were removed/gated\n- Restore live chat for **stuck transfer** contexts (transaction detail, error states, tracking screen)\n- Ensure chat transcript includes transfer MTCN / reference and corridor context\n- Define hours, queue, and fallback (callback / ticket) when agents offline\n- Log chat open \u2192 connect \u2192 resolution for instrumentation\n\n## Acceptance criteria\n- [ ] From a delayed/stuck transfer screen, user can start live chat in \u22642 taps\n- [ ] Agent sees transfer context without asking the user to re-type the reference\n- [ ] Offline hours show clear fallback and expected response time\n- [ ] Chat volume and connect success rate tracked\n\n## Labels\nSupport \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1",
+      "support"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:25Z",
+    "updated_at": "2026-07-31T11:17:25Z",
+    "comments": 0
+  },
+  {
+    "number": 3,
+    "title": "[KYC] Add visible in-app verification status tracker",
+    "body": "## Why\nCustomers report weeks of silence during verification. A visible status tracker reduces support load and perceived delay even when backend review is still in progress.\n\n## Scope (Month 1)\n- Define status model: Submitted \u2192 In review \u2192 Action needed \u2192 Approved / Rejected\n- Build tracker UI on account/home and deep-link from KYC completion\n- Surface **Action needed** with clear next steps (re-upload docs, selfie, etc.)\n- Push/in-app notification hooks for status transitions (wire events; delivery can harden in Month 2)\n- Map statuses to analytics events for time-in-stage\n\n## Acceptance criteria\n- [ ] User can see current verification stage without contacting support\n- [ ] Action-needed state shows concrete remediation steps\n- [ ] Status updates within agreed freshness SLA (document assumed API latency)\n- [ ] Events emitted for each stage transition\n\n## Labels\nTrust & onboarding \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1",
+      "kyc"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:21Z",
+    "updated_at": "2026-07-31T11:17:21Z",
+    "comments": 0
+  },
+  {
+    "number": 2,
+    "title": "[KYC] Improve document-scanning UX for identity verification",
+    "body": "## Why\n#1 complaint across Play Store / Trustpilot \u2014 KYC delays of weeks were reported. Better capture quality reduces resubmits and manual review.\n\n## Scope (Month 1)\n- Audit current document-capture flow (camera permissions, framing guidance, blur/glare detection, retake UX)\n- Ship clearer on-screen guidance (document edges, lighting, hold-steady cues)\n- Add client-side quality checks before upload (blur, crop, glare, incomplete page)\n- Reduce dead-ends: actionable error copy + one-tap retake\n- Instrument capture \u2192 upload \u2192 submit success/fail rates\n\n## Out of scope (Month 2+)\nFull backend approval SLA redesign; new ID types beyond current corridors.\n\n## Acceptance criteria\n- [ ] Capture guidance and quality checks available in the primary KYC path\n- [ ] Resubmit rate for document quality reasons measurable and trending down vs baseline\n- [ ] No increase in crash rate on camera/KYC screens\n- [ ] SCA/compliance review completed for the release\n\n## Labels\nTrust & onboarding \u00b7 Phase 1 \u00b7 Month 1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1",
+      "kyc",
+      "security"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:17Z",
+    "updated_at": "2026-07-31T11:17:17Z",
+    "comments": 0
+  },
+  {
+    "number": 1,
+    "title": "[Epic] Month 1 \u2014 Stabilize foundations (KYC, support, reliability, analytics)",
+    "body": "## Context\nFrom the 6-month roadmap (**Phase 1 \u2014 Stabilize**, Months 1\u20132): stop the bleeding on the most-cited complaints before adding anything new.\n\n**Guiding logic:** Fix what is losing customers today before investing in what could win new ones tomorrow.\n\n## Month 1 objective\nStand up the foundations and first shippable increments for all four Phase 1 workstreams so Month 2 can harden and hit exit metrics.\n\n## Child workstreams\n- Trust & onboarding (KYC)\n- Support\n- Reliability\n- Instrumentation\n\n## Phase 1 exit metrics (target by end of Month 2)\n- KYC median approval time cut by **50%**\n- App-store rating trend **flat-to-up** while fixes ship\n\n## Cross-cutting\nEvery release ships with its own SCA/PCI review, especially anything touching payments or identity.\n\n## Acceptance\n- [ ] All Month 1 issues under this milestone are Done or explicitly deferred with rationale\n- [ ] Baseline dashboards live for onboarding drop-off, KYC time-to-approve, and support ticket volume by category\n- [ ] At least one KYC UX improvement and verification-status MVP in a release candidate\n- [ ] Live chat path restored for stuck-transfer cases (or clear interim escalation path)\n- [ ] Top login/account-linking and Android crash defects triaged with fixes for P0/P1",
+    "labels": [
+      "enhancement",
+      "phase-1",
+      "month-1"
+    ],
+    "milestone": "Month 1 \u2014 Stabilize Foundations",
+    "state": "open",
+    "created_at": "2026-07-31T11:17:13Z",
+    "updated_at": "2026-07-31T11:17:13Z",
+    "comments": 0
+  }
+]

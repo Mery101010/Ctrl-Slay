@@ -1,0 +1,18 @@
+﻿__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+.cursor/
+
+# Large raw corpora (GitHub 100MB file limit)
+data/raw/
+data/csv/play_market_apps_reviews.csv
+data/csv/play_market_games_reviews.csv
+data/csv/kerassy_trustpilot_reviews_123k.csv
+data/csv/tobi_bueck_customer_support_tickets.csv
+data/csv/sealuzh_app_reviews.csv
+data/csv/play_market_apps_info.csv
+data/csv/play_market_games_info.csv

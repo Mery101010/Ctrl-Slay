@@ -1,0 +1,218 @@
+source,product_type,app_key,app_name,unified_category,play_category_clean,section,review_count,score,ratings_count,downloads
+play_market_apps,App,17,Yahoo Mail,Communication & Social,Communication,Popular apps,15000,4.5,8119999,100000000
+play_market_apps,App,140,Google Voice,Communication & Social,Communication,Popular apps,15000,4.3,361000,10000000
+play_market_apps,App,139,"Linky AI: Chat, Play, Connect",Communication & Social,Social,Popular apps,11217,4.1,76600,10000000
+play_market_apps,App,174,Bluesky,Communication & Social,Social,Popular apps,8359,3.9,44200,10000000
+play_market_apps,App,24,textPlus: Text Message + Call,Communication & Social,Social,Popular apps,0,4.1,544000,50000000
+play_market_apps,App,25,Bigo Live - Live Streaming App,Communication & Social,Social,Popular apps,0,4.4,6110000,500000000
+play_market_apps,App,28,Facebook Lite,Communication & Social,Social,Popular apps,0,4.4,30300000,1000000000
+play_market_apps,App,38,Google Messages,Communication & Social,Communication,Popular apps,0,4.5,23600000,5000000000
+play_market_apps,App,49,Getcontact,Communication & Social,Communication,Popular apps,0,4.2,3790000,100000000
+play_market_apps,App,51,Carrier Services,Communication & Social,Communication,Popular apps,0,4.3,1770000,5000000000
+play_market_apps,App,53,Tor Browser,Communication & Social,Communication,Popular apps,0,4.5,245000,10000000
+play_market_apps,App,63,Text Me: Second Phone Number,Communication & Social,Social,Popular apps,0,4.3,544000,50000000
+play_market_apps,App,67,TextNow: Call + Text Unlimited,Communication & Social,Communication,Popular apps,0,4.5,1500000,100000000
+play_market_apps,App,70,Samsung Internet Browser,Communication & Social,Communication,Popular apps,0,3.6,5820000,1000000000
+play_market_apps,App,81,Firefox Fast & Private Browser,Communication & Social,Communication,Popular apps,0,4.6,5880000,100000000
+play_market_apps,App,82,Telegram X,Communication & Social,Social,Popular apps,0,4.2,737000,100000000
+play_market_apps,App,90,GroupMe,Communication & Social,Communication,Popular apps,0,4.6,594000,10000000
+play_market_apps,App,110,Opera: Private Web Browser,Communication & Social,Communication,Popular apps,0,4.8,5050000,100000000
+play_market_apps,App,125,"Clapper: Video, Live, Chat",Communication & Social,Social,Popular apps,0,4.6,72400,5000000
+play_market_apps,App,135,Microsoft Edge: AI browser,Communication & Social,Communication,Popular apps,0,4.7,1320000,100000000
+play_market_apps,App,148,Threads,Communication & Social,Social,Popular apps,0,4.1,1350000,100000000
+play_market_apps,App,149,Zangi Private Messenger,Communication & Social,Communication,Popular apps,0,4.3,170000,10000000
+play_market_apps,App,150,"Tumblr—Fandom, Art, Chaos",Communication & Social,Social,Popular apps,0,4.0,3730000,100000000
+play_market_apps,App,153,Psiphon: Fast and Secure VPN,Communication & Social,Communication,Popular apps,0,4.4,900000,100000000
+play_market_apps,App,157,Text Free: Second Call Number,Communication & Social,Social,Popular apps,0,4.4,562000,10000000
+play_market_apps,App,159,Messenger,Communication & Social,Communication,Popular apps,0,4.6,101000000,5000000000
+play_market_apps,App,161,Contacts,Communication & Social,Communication,Popular apps,0,4.3,1620000,1000000000
+play_market_apps,App,166,WhatsApp Business,Communication & Social,Communication,Popular apps,0,4.4,16100000,1000000000
+play_market_apps,App,173,"UC Browser-Safe, Fast, Private",Communication & Social,Communication,Popular apps,0,4.3,22300000,1000000000
+play_market_apps,App,190,TikTok Lite - Faster TikTok,Communication & Social,Social,Popular apps,0,4.4,6140,1000000
+play_market_apps,App,203,Opera Mini: Fast Web Browser,Communication & Social,Communication,Popular apps,0,4.7,9610000,500000000
+play_market_apps,App,204,Telegram,Communication & Social,Communication,Popular apps,0,4.2,15500000,1000000000
+play_market_apps,App,207,T-Mobile Scam Shield,Communication & Social,Communication,Popular apps,0,4.6,214000,10000000
+play_market_apps,App,210,"Brave Private Web Browser, VPN",Communication & Social,Communication,Popular apps,0,4.7,2440000,100000000
+play_market_apps,App,95,Gauth: AI Study Companion,Education,Education,Popular apps,13604,4.8,1120000,50000000
+play_market_apps,App,62,Speak & Learn English: Learna,Education,Education,Popular apps,0,4.6,241000,10000000
+play_market_apps,App,7,IMDb: Movies & TV Shows,Entertainment & Media,Entertainment,Entertainment,15000,4.4,948000,100000000
+play_market_apps,App,98,YouTube TV: Live TV & more,Entertainment & Media,Entertainment,Popular apps,14999,4.0,151000,10000000
+play_market_apps,App,177,Talkie: Creative AI Community,Entertainment & Media,Entertainment,Popular apps,12740,4.5,534000,10000000
+play_market_apps,App,141,Google Play Games,Entertainment & Media,Entertainment,Popular apps,11879,4.1,13300000,5000000000
+play_market_apps,App,6,AXS Tickets,Entertainment & Media,Entertainment,Entertainment,6281,4.8,35500,5000000
+play_market_apps,App,59,Xbox,Entertainment & Media,Entertainment,Popular apps,5479,4.5,2120000,100000000
+play_market_apps,App,21,NetShort - Popular Dramas & TV,Entertainment & Media,Entertainment,Popular apps,0,4.6,825000,10000000
+play_market_apps,App,30,VIZIO | WatchFree+,Entertainment & Media,Entertainment,Popular apps,0,4.3,79500,10000000
+play_market_apps,App,37,"Scoopz: Real Life, Real Video",Entertainment & Media,Entertainment,Popular apps,0,4.7,51700,5000000
+play_market_apps,App,43,"Ticketmaster－Buy, Sell Tickets",Entertainment & Media,Events,Popular apps,0,2.4,164000,10000000
+play_market_apps,App,48,Meta Horizon,Entertainment & Media,Entertainment,Popular apps,0,3.7,67300,10000000
+play_market_apps,App,50,"Character AI: Chat, Talk, Text",Entertainment & Media,Entertainment,Popular apps,0,4.4,1530000,10000000
+play_market_apps,App,61,ReelShort - Stream Drama & TV,Entertainment & Media,Entertainment,Popular apps,0,4.3,641000,50000000
+play_market_apps,App,91,Apple TV,Entertainment & Media,Entertainment,Popular apps,0,3.5,29700,50000000
+play_market_apps,App,103,BESTPLAY Play to earn & donate,Entertainment & Media,Entertainment,Popular apps,0,4.8,39500,5000000
+play_market_apps,App,112,Samsung TV Plus - TV & Movies,Entertainment & Media,Entertainment,Popular apps,0,4.0,22300,50000000
+play_market_apps,App,113,Steam,Entertainment & Media,Entertainment,Popular apps,0,2.7,1040000,100000000
+play_market_apps,App,124,GoodShort - Movies & Dramas,Entertainment & Media,Entertainment,Popular apps,0,4.9,1750000,10000000
+play_market_apps,App,126,"ZEPETO: Avatar, Connect & Live",Entertainment & Media,Entertainment,Popular apps,0,4.5,2750000,100000000
+play_market_apps,App,129,MISTPLAY: Play to Earn Money,Entertainment & Media,Entertainment,Popular apps,0,4.4,790000,10000000
+play_market_apps,App,130,PolyBuzz: Chat with AI Friends,Entertainment & Media,Entertainment,Popular apps,0,4.1,460000,10000000
+play_market_apps,App,146,DramaBox - Stream Drama Shorts,Entertainment & Media,Entertainment,Popular apps,0,4.7,1730000,100000000
+play_market_apps,App,154,FlickReels - Short Drama & TV,Entertainment & Media,Entertainment,Popular apps,0,4.4,95900,5000000
+play_market_apps,App,155,Patreon,Entertainment & Media,Entertainment,Popular apps,0,4.8,148000,10000000
+play_market_apps,App,167,PlayStation App,Entertainment & Media,Entertainment,Popular apps,0,3.6,1070000,100000000
+play_market_apps,App,171,"ViX: TV, Deportes y Noticias",Entertainment & Media,Entertainment,Popular apps,0,4.6,568000,50000000
+play_market_apps,App,172,Plex: Stream Movies & TV,Entertainment & Media,Entertainment,Popular apps,0,4.4,447000,50000000
+play_market_apps,App,191,Emochi: Chat With Character,Entertainment & Media,Entertainment,Popular apps,0,4.5,86200,1000000
+play_market_apps,App,192,JustPlay: Earn Money or Donate,Entertainment & Media,Entertainment,Popular apps,0,4.5,1180000,10000000
+play_market_apps,App,212,Prime Video,Entertainment & Media,Entertainment,Popular apps,0,4.0,4860000,500000000
+play_market_apps,App,1,Western Union Send Money Now,Finance & Payments,Finance,Budgeting tools,21462,4.6,317000,10000000
+play_market_apps,App,18,Google Wallet,Finance & Payments,Finance,Popular apps,13040,4.5,1860000,1000000000
+play_market_apps,App,33,Intuit Credit Karma,Finance & Payments,Finance,Popular apps,0,4.6,3000000,50000000
+play_market_apps,App,47,Robinhood - FinTech SuperApp,Finance & Payments,Finance,Popular apps,0,4.2,515000,10000000
+play_market_apps,App,69,"Coinbase: Buy BTC, ETH, SOL",Finance & Payments,Finance,Popular apps,0,4.5,895000,10000000
+play_market_apps,App,84,Zelle®,Finance & Payments,Finance,Popular apps,0,4.1,161000,10000000
+play_market_apps,App,86,Kikoff - Build Credit Quickly,Finance & Payments,Finance,Popular apps,0,4.8,85800,1000000
+play_market_apps,App,104,GEICO Mobile - Car Insurance,Finance & Payments,Finance,Popular apps,0,4.6,499000,10000000
+play_market_apps,App,108,Progressive,Finance & Payments,Finance,Popular apps,0,4.6,190000,10000000
+play_market_apps,App,152,Rocket Money - Bills & Budgets,Finance & Payments,Finance,Popular apps,0,4.6,94100,10000000
+play_market_apps,App,193,State Farm®,Finance & Payments,Finance,Popular apps,0,4.6,326000,10000000
+play_market_apps,App,194,Remitly: Send Money & Transfer,Finance & Payments,Finance,Popular apps,0,4.8,1060000,10000000
+play_market_apps,App,57,Taco Bell Fast Food & Delivery,Food & Drink,Food & Drink,Popular apps,15000,1.9,188000,10000000
+play_market_apps,App,58,Subway®,Food & Drink,Food & Drink,Popular apps,15000,4.4,453000,10000000
+play_market_apps,App,176,Domino's Pizza USA,Food & Drink,Food & Drink,Popular apps,15000,4.7,2270000,10000000
+play_market_apps,App,9,Panda Express,Food & Drink,Food & Drink,Food and drink apps,9961,4.7,51000,5000000
+play_market_apps,App,14,Dairy Queen® Food & Treats,Food & Drink,Food & Drink,Popular apps,8936,4.5,66100,5000000
+play_market_apps,App,8,Wingstop,Food & Drink,Food & Drink,Food and drink apps,8791,4.8,136000,1000000
+play_market_apps,App,180,BURGER KING® App,Food & Drink,Food & Drink,Popular apps,2660,4.5,297000,10000000
+play_market_apps,App,29,Uber Eats: Food Delivery,Food & Drink,Food & Drink,Popular apps,0,4.6,6320000,100000000
+play_market_apps,App,32,Wendy’s,Food & Drink,Food & Drink,Popular apps,0,4.7,487000,10000000
+play_market_apps,App,42,Popeyes® App,Food & Drink,Food & Drink,Popular apps,0,4.9,106000,5000000
+play_market_apps,App,87,KFC US - Ordering App,Food & Drink,Food & Drink,Popular apps,0,3.4,23800,5000000
+play_market_apps,App,93,SONIC Drive-In - Order Online,Food & Drink,Food & Drink,Popular apps,0,4.5,650000,10000000
+play_market_apps,App,119,Little Caesars,Food & Drink,Food & Drink,Popular apps,0,4.7,499000,10000000
+play_market_apps,App,182,McDonald's,Food & Drink,Food & Drink,Popular apps,0,4.4,2130000,50000000
+play_market_apps,App,184,7-Eleven: Rewards & Shopping,Food & Drink,Food & Drink,Popular apps,0,4.8,395000,10000000
+play_market_apps,App,187,Chick-fil-A®,Food & Drink,Food & Drink,Popular apps,0,4.6,199000,10000000
+play_market_apps,App,198,Dunkin’,Food & Drink,Food & Drink,Popular apps,0,4.6,565000,10000000
+play_market_apps,App,200,Pizza Hut - Delivery & Takeout,Food & Drink,Food & Drink,Popular apps,0,4.0,982000,10000000
+play_market_apps,App,205,Chipotle,Food & Drink,Food & Drink,Popular apps,0,4.6,402000,5000000
+play_market_apps,App,209,Starbucks,Food & Drink,Food & Drink,Popular apps,0,4.8,1340000,10000000
+play_market_apps,App,94,Planet Fitness Workouts,Health & Fitness,Health & Fitness,Popular apps,9207,4.6,68000,10000000
+play_market_apps,App,178,NCAA March Madness Live,Health & Fitness,Sports,Popular apps,8492,4.7,78400,5000000
+play_market_apps,App,36,Finch: Self-Care Pet,Health & Fitness,Health & Fitness,Popular apps,0,4.9,383000,5000000
+play_market_apps,App,41,Samsung Health,Health & Fitness,Health & Fitness,Popular apps,0,3.6,1530000,1000000000
+play_market_apps,App,122,GameChanger,Health & Fitness,Sports,Popular apps,0,4.6,24000,1000000
+play_market_apps,App,133,MLB Ballpark,Health & Fitness,Sports,Popular apps,0,4.6,155000,5000000
+play_market_apps,App,143,MLB,Health & Fitness,Sports,Popular apps,0,4.3,220000,10000000
+play_market_apps,App,195,Impulse - Brain Training Games,Health & Fitness,Health & Fitness,Popular apps,0,4.5,356000,10000000
+play_market_apps,App,137,Realtor.com Real Estate & Rent,Lifestyle & Home,House & Home,Popular apps,14885,4.7,510000,10000000
+play_market_apps,App,99,Amazon Alexa,Lifestyle & Home,Lifestyle,Popular apps,9380,4.2,4790000,100000000
+play_market_apps,App,74,Nextdoor: Neighborhood network,Lifestyle & Home,Lifestyle,Popular apps,0,4.4,369000,10000000
+play_market_apps,App,83,Google Home,Lifestyle & Home,Lifestyle,Popular apps,0,4.2,3110000,1000000000
+play_market_apps,App,188,Lemon8 - Lifestyle Community,Lifestyle & Home,Lifestyle,Popular apps,0,3.5,182000,10000000
+play_market_apps,App,11,My Earthquake Alerts - Map,Maps & Navigation,Weather,Maps & GPS,4269,4.6,184000,5000000
+play_market_apps,App,20,Transit • Subway & Bus Times,Maps & Navigation,Maps & Navigation,Popular apps,0,4.6,284000,10000000
+play_market_apps,App,134,Waze Navigation & Live Traffic,Maps & Navigation,Maps & Navigation,Popular apps,0,4.2,8810000,500000000
+play_market_apps,App,12,Suno - AI Music,Music & Audio,Music & Audio,Music & audio,7494,4.8,290000,5000000
+play_market_apps,App,64,Amazon Music: Songs & Podcasts,Music & Audio,Music & Audio,Popular apps,0,3.5,3210000,100000000
+play_market_apps,App,77,Audiomack: Music Downloader,Music & Audio,Music & Audio,Popular apps,0,4.8,6200000,100000000
+play_market_apps,App,89,Shazam: Find Music & Concerts,Music & Audio,Music & Audio,Popular apps,0,4.8,11000000,500000000
+play_market_apps,App,100,Music Player & MP3 - DDMusic,Music & Audio,Music & Audio,Popular apps,0,4.7,1020000,100000000
+play_market_apps,App,111,Apple Music,Music & Audio,Music & Audio,Popular apps,0,4.6,635000,100000000
+play_market_apps,App,115,Pocket FM: Audio Series,Music & Audio,Music & Audio,Popular apps,0,4.5,3880000,100000000
+play_market_apps,App,163,JBL Headphones,Music & Audio,Music & Audio,Popular apps,0,4.6,460000,10000000
+play_market_apps,App,13,Scanner Radio - Police Scanner,News & Magazines,News & Magazines,News & magazines,19418,4.7,452000,10000000
+play_market_apps,App,96,Local News: Breaking & Latest,News & Magazines,News & Magazines,Popular apps,4320,4.5,27600,5000000
+play_market_apps,App,44,X,News & Magazines,News & Magazines,Popular apps,0,3.8,22600000,1000000000
+play_market_apps,App,52,NewsBreak: Local News & Alerts,News & Magazines,News & Magazines,Popular apps,0,4.6,576000,50000000
+play_market_apps,App,85,Substack,News & Magazines,News & Magazines,Popular apps,0,4.8,110000,1000000
+play_market_apps,App,118,Police Scanner - Live Radio,News & Magazines,News & Magazines,Popular apps,0,4.8,108000,10000000
+play_market_apps,App,120,Google News - Daily Headlines,News & Magazines,News & Magazines,Popular apps,0,4.1,1930000,1000000000
+play_market_apps,App,46,Google Play Books & Audiobooks,Other,Books & Reference,Popular apps,0,4.7,2840000,1000000000
+play_market_apps,App,76,ibis Paint X,Other,Art & Design,Popular apps,0,4.4,2690000,100000000
+play_market_apps,App,214,TikTok Studio,Photo & Video,Video Players & Editors,Share photos & videos,1393,4.7,201000,10000000
+play_market_apps,App,39,Amazon Photos: Photo & Video,Photo & Video,Photography,Popular apps,0,4.7,997000,50000000
+play_market_apps,App,75,UpFoto - AI Photo Enhancer,Photo & Video,Photography,Popular apps,0,4.6,1120000,50000000
+play_market_apps,App,158,Remini - AI Photo Enhancer,Photo & Video,Photography,Popular apps,0,4.2,5070000,100000000
+play_market_apps,App,197,YouTube Studio,Photo & Video,Video Players & Editors,Popular apps,0,4.3,2140000,100000000
+play_market_apps,App,15,DoorDash - Dasher,Productivity & Business,Business,Popular apps,15000,4.4,459000,10000000
+play_market_apps,App,56,Google Calendar,Productivity & Business,Productivity,Popular apps,15000,4.6,3670000,5000000000
+play_market_apps,App,16,Google One,Productivity & Business,Productivity,Popular apps,14359,4.2,729000,1000000000
+play_market_apps,App,55,Workday,Productivity & Business,Business,Popular apps,14055,4.4,207000,10000000
+play_market_apps,App,216,Smart Home Manager,Productivity & Business,Productivity,Tools & utilities,12937,4.5,77700,5000000
+play_market_apps,App,215,Okta Verify,Productivity & Business,Productivity,Tools & utilities,3548,4.4,34900,10000000
+play_market_apps,App,2,"Priceline: Hotel, Flight & Car",Productivity & Business,Travel & Local,Business tools,1620,4.7,502000,10000000
+play_market_apps,App,3,Slack,Productivity & Business,Business,Business tools,0,3.4,134000,10000000
+play_market_apps,App,4,MyWalmart,Productivity & Business,Business,Business tools,0,4.7,211000,1000000
+play_market_apps,App,5,Fidelity Investments,Productivity & Business,Finance,Business tools,0,4.6,182000,5000000
+play_market_apps,App,22,Microsoft Word: Edit Documents,Productivity & Business,Productivity,Popular apps,0,4.8,13000000,1000000000
+play_market_apps,App,23,Claude by Anthropic,Productivity & Business,Productivity,Popular apps,0,4.6,62700,1000000
+play_market_apps,App,35,Google Drive,Productivity & Business,Productivity,Popular apps,0,4.3,10500000,10000000000
+play_market_apps,App,45,Google Keep - Notes and lists,Productivity & Business,Productivity,Popular apps,0,4.1,1670000,1000000000
+play_market_apps,App,60,DeepSeek - AI Assistant,Productivity & Business,Productivity,Popular apps,0,4.3,142000,10000000
+play_market_apps,App,65,Google Chat,Productivity & Business,Business,Popular apps,0,4.4,288000,50000000
+play_market_apps,App,66,HP Smart,Productivity & Business,Productivity,Popular apps,0,4.3,795000,100000000
+play_market_apps,App,71,Google Tasks,Productivity & Business,Productivity,Popular apps,0,4.6,475000,10000000
+play_market_apps,App,72,Microsoft Authenticator,Productivity & Business,Business,Popular apps,0,4.7,2049999,100000000
+play_market_apps,App,73,Microsoft OneDrive,Productivity & Business,Productivity,Popular apps,0,4.6,6200000,1000000000
+play_market_apps,App,78,Intune Company Portal,Productivity & Business,Business,Popular apps,0,2.6,168000,50000000
+play_market_apps,App,106,Microsoft Copilot,Productivity & Business,Productivity,Popular apps,0,4.7,1000000,10000000
+play_market_apps,App,114,Duo Mobile,Productivity & Business,Business,Popular apps,0,4.7,79100,10000000
+play_market_apps,App,116,Google Sheets,Productivity & Business,Productivity,Popular apps,0,4.1,1220000,1000000000
+play_market_apps,App,132,ADP Mobile Solutions,Productivity & Business,Business,Popular apps,0,4.6,641000,10000000
+play_market_apps,App,144,Google Slides,Productivity & Business,Productivity,Popular apps,0,4.0,624000,1000000000
+play_market_apps,App,160,Grok - AI Assistant,Productivity & Business,Productivity,Popular apps,0,4.9,647000,10000000
+play_market_apps,App,168,Microsoft Excel: Spreadsheets,Productivity & Business,Productivity,Popular apps,0,4.8,7060000,1000000000
+play_market_apps,App,169,Uber - Driver: Drive & Deliver,Productivity & Business,Business,Popular apps,0,4.6,4840000,100000000
+play_market_apps,App,183,Google Docs,Productivity & Business,Productivity,Popular apps,0,4.1,1890000,1000000000
+play_market_apps,App,186,Google Assistant,Productivity & Business,Productivity,Popular apps,0,3.8,1150000,1000000000
+play_market_apps,App,196,UKG Pro,Productivity & Business,Business,Popular apps,0,4.4,29300,1000000
+play_market_apps,App,199,Microsoft Teams,Productivity & Business,Business,Popular apps,0,4.6,7960000,100000000
+play_market_apps,App,206,Link to Windows,Productivity & Business,Productivity,Popular apps,0,4.0,1000000,1000000000
+play_market_apps,App,97,"Nike: Shoes, Apparel & Stories",Shopping & Commerce,Shopping,Popular apps,15000,4.7,970000,50000000
+play_market_apps,App,175,Alibaba.com - B2B marketplace,Shopping & Commerce,Shopping,Popular apps,15000,4.4,2820000,500000000
+play_market_apps,App,10,Safeway Deals & Delivery,Shopping & Commerce,Shopping,Go shopping,13996,4.7,327000,5000000
+play_market_apps,App,138,Shop: All your favorite brands,Shopping & Commerce,Shopping,Popular apps,12740,4.5,603000,10000000
+play_market_apps,App,34,Dollar General-Digital Coupons,Shopping & Commerce,Shopping,Popular apps,0,4.7,716000,10000000
+play_market_apps,App,40,Walmart: Shopping & Savings,Shopping & Commerce,Shopping,Popular apps,0,4.7,5670000,100000000
+play_market_apps,App,92,DHgate-online wholesale stores,Shopping & Commerce,Shopping,Popular apps,0,4.2,529000,10000000
+play_market_apps,App,102,"Whatnot: Shop, Sell, Connect",Shopping & Commerce,Shopping,Popular apps,0,4.6,126000,1000000
+play_market_apps,App,107,Lowe's,Shopping & Commerce,Shopping,Popular apps,0,4.6,223000,10000000
+play_market_apps,App,121,Kroger,Shopping & Commerce,Shopping,Popular apps,0,4.3,350000,10000000
+play_market_apps,App,131,Capital One Shopping,Shopping & Commerce,Shopping,Popular apps,0,4.7,73700,5000000
+play_market_apps,App,136,Costco Wholesale,Shopping & Commerce,Shopping,Popular apps,0,4.7,273000,10000000
+play_market_apps,App,142,SHEIN-Shopping Online,Shopping & Commerce,Shopping,Popular apps,0,4.0,6430000,500000000
+play_market_apps,App,145,Best Buy: Shop tech deals,Shopping & Commerce,Shopping,Popular apps,0,4.7,320000,10000000
+play_market_apps,App,147,craigslist,Shopping & Commerce,Shopping,Popular apps,0,4.7,234000,10000000
+play_market_apps,App,156,Instacart: Earn money to shop,Shopping & Commerce,Shopping,Popular apps,0,4.2,164000,5000000
+play_market_apps,App,165,Fetch: America’s Rewards App,Shopping & Commerce,Shopping,Popular apps,0,4.7,1340000,10000000
+play_market_apps,App,181,AliExpress - Shopping App,Shopping & Commerce,Shopping,Popular apps,0,4.5,16000000,500000000
+play_market_apps,App,185,Bath & Body Works,Shopping & Commerce,Shopping,Popular apps,0,4.4,287000,5000000
+play_market_apps,App,202,The Home Depot,Shopping & Commerce,Shopping,Popular apps,0,4.6,725000,10000000
+play_market_apps,App,211,Sam’s Club: Shopping made easy,Shopping & Commerce,Shopping,Popular apps,0,4.9,457000,10000000
+play_market_apps,App,213,Target,Shopping & Commerce,Shopping,Popular apps,0,3.7,297000,10000000
+play_market_apps,App,31,Google Lens,Tools & Utilities,Tools,Popular apps,0,4.7,2550000,1000000000
+play_market_apps,App,54,"DuckDuckGo Browser, Search, AI",Tools & Utilities,Tools,Popular apps,0,4.7,2270000,50000000
+play_market_apps,App,80,Beats,Tools & Utilities,Tools,Popular apps,0,3.8,21500,5000000
+play_market_apps,App,101,Files by Google,Tools & Utilities,Tools,Popular apps,0,4.5,8359999,5000000000
+play_market_apps,App,109,CoinSnap - Coin Identifier,Tools & Utilities,Tools,Popular apps,0,4.4,62400,5000000
+play_market_apps,App,123,VPN - Super Unlimited Proxy,Tools & Utilities,Tools,Popular apps,0,4.7,1300000,100000000
+play_market_apps,App,127,Gboard - the Google Keyboard,Tools & Utilities,Tools,Popular apps,0,4.5,16600000,10000000000
+play_market_apps,App,128,Proxy Browser,Tools & Utilities,Tools,Popular apps,0,4.1,478000,100000000
+play_market_apps,App,151,VPN Proton: Fast & Secure VPN,Tools & Utilities,Tools,Popular apps,0,4.7,410000,10000000
+play_market_apps,App,162,TeraBox: Cloud Storage Space,Tools & Utilities,Tools,Popular apps,0,4.5,3360000,100000000
+play_market_apps,App,170,Google Family Link,Tools & Utilities,Tools,Popular apps,0,4.6,4120000,100000000
+play_market_apps,App,189,Google Translate,Tools & Utilities,Tools,Popular apps,0,4.3,9030000,1000000000
+play_market_apps,App,201,Ai Browser - Smarter & Safer,Tools & Utilities,Tools,Popular apps,0,4.8,435000,10000000
+play_market_apps,App,208,Zedge™ Wallpapers & Ringtones,Tools & Utilities,Personalization,Popular apps,0,4.7,16300000,500000000
+play_market_apps,App,217,Frontier Airlines,Travel & Local,Travel & Local,Travel & local,9257,4.2,95300,5000000
+play_market_apps,App,179,U-Haul,Travel & Local,Travel & Local,Popular apps,5922,3.1,14900,1000000
+play_market_apps,App,19,United Airlines,Travel & Local,Travel & Local,Popular apps,0,4.6,774000,10000000
+play_market_apps,App,26,Google Earth,Travel & Local,Travel & Local,Popular apps,0,4.0,2980000,500000000
+play_market_apps,App,27,Marriott Bonvoy: Book Hotels,Travel & Local,Travel & Local,Popular apps,0,4.8,432000,10000000
+play_market_apps,App,79,Hilton Honors: Book Hotels,Travel & Local,Travel & Local,Popular apps,0,4.5,157000,10000000
+play_market_apps,App,88,American Airlines,Travel & Local,Travel & Local,Popular apps,0,4.6,98100,10000000
+play_market_apps,App,105,Upside: Cash Back - Gas & Food,Travel & Local,Travel & Local,Popular apps,0,4.6,401000,10000000
+play_market_apps,App,164,Southwest Airlines: Travel App,Travel & Local,Travel & Local,Popular apps,0,4.6,165000,10000000
+play_market_apps,App,68,Weather,Weather,Weather,Popular apps,0,4.7,125000,10000000
+play_market_apps,App,117,The Weather Channel - Radar,Weather,Weather,Popular apps,0,4.5,3250000,100000000
