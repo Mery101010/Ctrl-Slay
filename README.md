@@ -19,12 +19,22 @@ Roadmap issues live in: [Western-Union-Mobile-App-Draft](https://github.com/Mery
 ```bash
 cd silent-stakeholder
 pip install -r requirements.txt
-python main.py --sample 3000
 python app.py
 # → http://127.0.0.1:7860
 ```
 
-Optional free LLM: copy `silent-stakeholder/.env.example` → `.env` and set `GROQ_API_KEY` from [console.groq.com](https://console.groq.com).
+The UI loads precomputed **`gaps.json`** and **`evidence_index.json`**, so you can demo chat without running analysis first. To refresh rankings:
+
+```bash
+python main.py --sample 3000   # CLI
+# or click "Run analysis" in the UI
+```
+
+Full setup, LLM options, and deploy notes: [`silent-stakeholder/README.md`](silent-stakeholder/README.md).
+
+## Optional LLM
+
+Copy `silent-stakeholder/.env.example` → `.env`. The app loads `.env` automatically (no extra package). If multiple keys are set, the first provider in the priority list wins — see the child README for order (OpenAI, Groq, Gemini, OpenRouter, Ollama, Anthropic). With **no key**, analysis and chat still work via offline heuristics.
 
 ## Note on data
 
