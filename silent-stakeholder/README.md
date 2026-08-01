@@ -78,6 +78,15 @@ Example questions (or use the suggestion chips):
 | POST | `/api/chat` | `{ "message", "history?" }` |
 | POST | `/api/analyze` | `{ "sample_n?", "top_n?" }` |
 
+## Tests
+
+Unit tests cover the pure logic (no network/LLM/sklearn dependency): gap merging, confidence scoring, verdict classification, and chat helpers.
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
 ## Deploy notes
 
 FastAPI app (`app.py`). Free hosts that work well:
