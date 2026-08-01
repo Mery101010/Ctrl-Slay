@@ -85,9 +85,9 @@ async function loadEvidence(ids, focusRank) {
         `;
       } else {
         div.innerHTML = `
-          <div class="id">${item.id}</div>
+          <div class="id">${item.label || item.id}</div>
           <div>${renderMarkdownLite(item.text || "")}</div>
-          <div class="meta">rating ${item.rating ?? "—"} · ${item.date || ""}</div>
+          <div class="meta">★ ${item.rating ?? "—"} · 👍 ${item.upvotes ?? 0} · ${item.date || ""} · <code>${item.id}</code></div>
         `;
       }
       list.appendChild(div);
@@ -132,7 +132,7 @@ async function runAnalyze() {
     const res = await fetch("/api/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ sample_n: 3000, top_n: 5 }),
+      body: JSON.stringify({ sample_n: 3000, top_n: 12 }),
     }).then((r) => r.json());
     await refreshStatus();
     const lines = (res.gaps || [])

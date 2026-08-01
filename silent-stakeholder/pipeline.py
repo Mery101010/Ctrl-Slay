@@ -66,7 +66,8 @@ def run_analysis(sample_n: Optional[int] = None, top_n: int = TOP_N_GAPS) -> lis
         return True
 
     gaps = [g for g in gaps if _is_real_need(g.need)]
-    gaps = gaps[: max(3, min(5, top_n))]
+    # Allow a deeper ranked list (default 12); brief still highlights top 3–5.
+    gaps = gaps[: max(3, min(20, top_n))]
 
     payload = [dataclasses.asdict(g) for g in gaps]
     for i, g in enumerate(payload, 1):
@@ -81,11 +82,14 @@ def run_analysis(sample_n: Optional[int] = None, top_n: int = TOP_N_GAPS) -> lis
         for eid in g.evidence_ids[:40]:
             if eid in reviews_by_id and eid not in index:
                 r = reviews_by_id[eid]
+                upvotes = int((r.raw_metadata or {}).get("helpful_count") or 0)
                 index[eid] = {
                     "id": eid,
                     "text": r.text[:500],
                     "rating": r.rating,
                     "date": r.timestamp,
+                    "upvotes": upvotes,
+                    "label": f"Play Store review #{eid.rsplit('_', 1)[-1]}",
                 }
     # also index roadmap issues referenced
     issue_by_id = {i.id: i for i in issues}

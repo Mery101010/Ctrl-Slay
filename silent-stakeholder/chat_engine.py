@@ -62,6 +62,20 @@ def _pick_gap(question: str, gaps: list[dict]) -> Optional[dict]:
     return gaps[0] if gaps else None
 
 
+def _looks_truncated(text: str) -> bool:
+    t = (text or "").rstrip()
+    if not t:
+        return True
+    if "truncated by model token limit" in t.lower():
+        return True
+    # Mid-word / unfinished markdown bold / cut after backtick
+    if t.endswith(("**", "`", "-", "—", ":", "(")) or t.endswith("issue"):
+        return True
+    if len(t) < 180 and not t.endswith((".", "!", "?", ")")):
+        return True
+    return False
+
+
 def _heuristic_answer(question: str, gaps: list[dict], evidence: dict) -> dict:
     q = question.lower()
     if not gaps:
@@ -75,7 +89,43 @@ def _heuristic_answer(question: str, gaps: list[dict], evidence: dict) -> dict:
             "provider": "heuristic",
         }
 
-    if any(w in q for w in ("top", "list", "summary", "what are", "unmet", "gaps")):
+    wants_roadmap = any(
+        w in q
+        for w in (
+            "github",
+            "roadmap",
+            "closest",
+            "nearest",
+            "issue",
+            "issues",
+            "backlog",
+        )
+    )
+    wants_list = any(
+        w in q for w in ("top", "list", "summary", "what are", "unmet", "gaps", "needs")
+    )
+
+    if wants_roadmap and ("closest" in q or "nearest" in q or "github" in q or "roadmap" in q):
+        bullets = []
+        for i, g in enumerate(gaps, 1):
+            bullets.append(
+                f"**#{i} · {g.get('confidence')}% · {g.get('verdict')}**\n"
+                f"{g.get('need')}\n"
+                f"_Closest roadmap issue:_ {_issue_link(g.get('nearest_roadmap_item'))} "
+                f"(similarity={g.get('roadmap_similarity')})"
+            )
+        return {
+            "reply": (
+                f"Closest GitHub roadmap issues for each gap "
+                f"([repo](https://github.com/{GITHUB_OWNER}/{GITHUB_REPO})):\n\n"
+                + "\n\n".join(bullets)
+            ),
+            "focus_rank": 1,
+            "evidence_ids": (gaps[0].get("evidence_ids") or [])[:8],
+            "provider": "heuristic",
+        }
+
+    if wants_list:
         bullets = []
         for i, g in enumerate(gaps, 1):
             bullets.append(
@@ -84,12 +134,14 @@ def _heuristic_answer(question: str, gaps: list[dict], evidence: dict) -> dict:
                 f"_Nearest roadmap:_ {_issue_link(g.get('nearest_roadmap_item'))} "
                 f"(sim={g.get('roadmap_similarity')})"
             )
+        primary = min(5, len(gaps))
+        header = (
+            f"Here are **{len(gaps)}** ranked unmet needs for **{PRODUCT_NAME}** "
+            f"(brief highlight = top {primary}) against "
+            f"[GitHub roadmap](https://github.com/{GITHUB_OWNER}/{GITHUB_REPO}):\n\n"
+        )
         return {
-            "reply": (
-                f"Here are the top {len(gaps)} unmet needs for **{PRODUCT_NAME}**, "
-                f"ranked against [GitHub roadmap](https://github.com/{GITHUB_OWNER}/{GITHUB_REPO}):\n\n"
-                + "\n\n".join(bullets)
-            ),
+            "reply": header + "\n\n".join(bullets),
             "focus_rank": 1,
             "evidence_ids": (gaps[0].get("evidence_ids") or [])[:8],
             "provider": "heuristic",
@@ -137,11 +189,27 @@ def answer(question: str, history: Optional[list] = None) -> dict:
     gaps = load_gaps()
     evidence = load_evidence()
     history = history or []
+    q = (question or "").lower()
 
-    if not llm.available():
+    # List/roadmap questions need complete answers for live defense.
+    structured = any(
+        w in q
+        for w in (
+            "top",
+            "list",
+            "summary",
+            "what are",
+            "unmet",
+            "closest",
+            "nearest",
+            "github",
+            "roadmap",
+            "which issue",
+        )
+    )
+    if structured or not llm.available():
         return _heuristic_answer(question, gaps, evidence)
 
-    # Build compact evidence snippets for the focused gap
     focus = _pick_gap(question, gaps) if gaps else None
     eids = (focus.get("evidence_ids") or [])[:6] if focus else []
     snippets = []
@@ -153,6 +221,7 @@ def answer(question: str, history: Optional[list] = None) -> dict:
     system = (
         f"You are Silent Stakeholder, defending a gap analysis for {PRODUCT_NAME}. "
         "Answer only from the provided gaps and evidence. Cite evidence IDs. "
+        "Finish every answer completely — never stop mid-sentence or mid-list. "
         "Be concise, direct, and honest about uncertainty. Use markdown sparingly."
     )
     hist_txt = "\n".join(
@@ -170,11 +239,19 @@ CHAT SO FAR:
 USER QUESTION:
 {question}
 
-Answer the question. If asking about a specific gap, defend the ranking with
+Answer the question completely. If asking about a specific gap, defend the ranking with
 confidence breakdown + evidence IDs + nearest roadmap item.
 """
     try:
-        resp = llm.complete(prompt, system=system, max_tokens=700)
+        resp = llm.complete(prompt, system=system, max_tokens=1200)
+        if _looks_truncated(resp.text):
+            fallback = _heuristic_answer(question, gaps, evidence)
+            fallback["reply"] = (
+                "_(Model answer looked truncated — showing full grounded reply)_\n\n"
+                + fallback["reply"]
+            )
+            fallback["provider"] = f"{resp.provider}+heuristic"
+            return fallback
         rank = gaps.index(focus) + 1 if focus else None
         return {
             "reply": resp.text,

@@ -34,7 +34,7 @@ class ChatRequest(BaseModel):
 
 class AnalyzeRequest(BaseModel):
     sample_n: Optional[int] = 3000
-    top_n: int = 5
+    top_n: int = 12
 
 
 @app.get("/")

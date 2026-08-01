@@ -25,7 +25,7 @@ from typing import Optional
 
 
 def _load_dotenv() -> None:
-    """Tiny .env loader so GROQ_API_KEY works without python-dotenv."""
+    """Tiny .env loader so GROQ_API_KEY / GEMINI_API_KEY work without python-dotenv."""
     path = Path(__file__).resolve().parent / ".env"
     if not path.exists():
         return
@@ -35,7 +35,8 @@ def _load_dotenv() -> None:
             continue
         key, _, val = line.partition("=")
         key, val = key.strip(), val.strip().strip('"').strip("'")
-        if key and key not in os.environ:
+        # .env wins for local hackathon setup (override empty/stale shell exports)
+        if key and val:
             os.environ[key] = val
 
 
@@ -59,6 +60,12 @@ def _env(*names: str) -> Optional[str]:
 
 def active_provider() -> dict:
     """Describe which backend will be used (for UI / debugging)."""
+    if _env("OPENAI_API_KEY"):
+        return {
+            "id": "openai",
+            "label": "OpenAI",
+            "model": os.environ.get("OPENAI_MODEL", "gpt-4o-mini"),
+        }
     if _env("GROQ_API_KEY"):
         return {
             "id": "groq",
@@ -113,6 +120,11 @@ def _ollama_alive() -> bool:
         return False
 
 
+def _redact(text: str) -> str:
+    """Avoid leaking API keys from URLs/error bodies into logs."""
+    return re.sub(r"(key=)[^&\s]+", r"\1***", text, flags=re.I)
+
+
 def _post_json(url: str, payload: dict, headers: dict, timeout: int = 60) -> dict:
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
@@ -123,7 +135,8 @@ def _post_json(url: str, payload: dict, headers: dict, timeout: int = 60) -> dic
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"HTTP {e.code} from {url}: {body[:400]}") from e
+        safe_url = _redact(url.split("?", 1)[0])
+        raise RuntimeError(f"HTTP {e.code} from {safe_url}: {_redact(body)[:400]}") from e
 
 
 def _openai_compatible(
@@ -161,15 +174,48 @@ def _gemini(system: str, user: str, max_tokens: int) -> LLMResponse:
         f"https://generativelanguage.googleapis.com/v1beta/models/"
         f"{model}:generateContent?key={key}"
     )
+    # flash-latest / thinking models can burn the output budget on internal
+    # reasoning and truncate mid-sentence. Request a large budget and disable
+    # thinking when the API supports it.
+    out_tokens = max(int(max_tokens), 2048)
+    gen_cfg: dict = {
+        "temperature": 0.2,
+        "maxOutputTokens": out_tokens,
+        "thinkingConfig": {"thinkingBudget": 0},
+    }
     payload = {
         "system_instruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": max_tokens},
+        "generationConfig": gen_cfg,
     }
-    out = _post_json(url, payload, {})
-    parts = out["candidates"][0]["content"]["parts"]
-    text = "".join(p.get("text", "") for p in parts)
-    return LLMResponse(text=text.strip(), provider="gemini", model=model)
+    try:
+        out = _post_json(url, payload, {})
+    except RuntimeError as e:
+        # Older models reject thinkingConfig — retry without it.
+        if "thinking" in str(e).lower() or "400" in str(e):
+            gen_cfg.pop("thinkingConfig", None)
+            payload["generationConfig"] = gen_cfg
+            out = _post_json(url, payload, {})
+        else:
+            raise
+    candidates = out.get("candidates") or []
+    if not candidates:
+        feedback = out.get("promptFeedback") or out.get("error") or out
+        raise RuntimeError(f"Gemini returned no candidates: {_redact(str(feedback))[:300]}")
+    cand0 = candidates[0]
+    content = cand0.get("content") or {}
+    parts = content.get("parts") or []
+    text = "".join(p.get("text", "") for p in parts if isinstance(p, dict)).strip()
+    if not text:
+        raise RuntimeError(
+            f"Gemini empty text (finish={cand0.get('finishReason')}, "
+            f"keys={list(content.keys())})"
+        )
+    # Surface truncation so callers can fall back to a complete answer.
+    finish = (cand0.get("finishReason") or "").upper()
+    if finish in {"MAX_TOKENS", "LENGTH"}:
+        text += "\n\n_(response truncated by model token limit)_"
+    return LLMResponse(text=text, provider="gemini", model=model)
 
 
 def _ollama(system: str, user: str, max_tokens: int) -> LLMResponse:
@@ -217,6 +263,16 @@ def complete(
     info = active_provider()
     pid = info["id"]
 
+    if pid == "openai":
+        return _openai_compatible(
+            base_url=os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1"),
+            api_key=_env("OPENAI_API_KEY"),
+            model=info["model"],
+            system=system,
+            user=prompt,
+            max_tokens=max_tokens,
+            provider="openai",
+        )
     if pid == "groq":
         return _openai_compatible(
             base_url="https://api.groq.com/openai/v1",
@@ -245,8 +301,8 @@ def complete(
         return _anthropic(system, prompt, max_tokens)
 
     raise RuntimeError(
-        "No free LLM configured. Set GROQ_API_KEY (recommended, free at "
-        "https://console.groq.com) or GEMINI_API_KEY, or install Ollama."
+        "No LLM configured. Set OPENAI_API_KEY, GROQ_API_KEY, GEMINI_API_KEY, "
+        "or install Ollama."
     )
 
 

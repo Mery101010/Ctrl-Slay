@@ -17,7 +17,7 @@ import llm
 def main():
     parser = argparse.ArgumentParser(description="Silent Stakeholder")
     parser.add_argument("--sample", type=int, default=None, help="Sample N reviews")
-    parser.add_argument("--top", type=int, default=TOP_N_GAPS, help="Top N gaps (3-5)")
+    parser.add_argument("--top", type=int, default=TOP_N_GAPS, help="Top N gaps (3-20)")
     parser.add_argument("--chat", action="store_true", help="Launch chatbot UI")
     args = parser.parse_args()
 

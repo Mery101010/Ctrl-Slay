@@ -21,15 +21,42 @@ SIM_STRONG_MATCH_MIN = 0.40    # above: a specific issue is confidently "about" 
 ACTIVITY_LOW_MAX = 0.35        # issue exists and is a strong match, but barely being worked
 
 CONFIDENCE_WEIGHTS = {
-    "volume": 0.25,       # more evidence = more confident it's real
+    # volume = upvote-weighted evidence mass (count + log1p(helpful_count))
+    "volume": 0.25,
     "recency": 0.15,      # growing trend = more confident it's not fading
     "roadmap_gap": 0.35,  # bigger distance = more confident it's unaddressed
-    "scope_alignment": 0.25,  # new: real LLM validation that roadmap truly addresses need
+    "scope_alignment": 0.25,  # LLM/heuristic scope check when a close issue exists
 }
 
 
-def _normalize_volume(size: int, max_size: int) -> float:
+def _normalize_volume(size: float, max_size: float) -> float:
     return min(size / max_size, 1.0) if max_size else 0.0
+
+
+def _helpful_count(review) -> int:
+    meta = getattr(review, "raw_metadata", None) or {}
+    try:
+        return max(0, int(meta.get("helpful_count") or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def _evidence_mass(evidence_ids: list, reviews_by_id: dict | None) -> float:
+    """
+    Volume weighted by Play Store upvotes (helpful_count).
+    Each review counts as 1 + log1p(upvotes) so a 48-upvote review
+    weighs more than an unvoted one, without letting megavotes dominate.
+    """
+    if not evidence_ids:
+        return 0.0
+    if not reviews_by_id:
+        return float(len(evidence_ids))
+    mass = 0.0
+    for rid in evidence_ids:
+        review = reviews_by_id.get(rid)
+        upvotes = _helpful_count(review) if review is not None else 0
+        mass += 1.0 + float(np.log1p(upvotes))
+    return mass
 
 
 def _classify_verdict(similarity: float, nearest_activity: float, scope_result: dict):
@@ -90,7 +117,11 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
     if not merged_themes:
         return []
 
-    max_size = max(t.get('cluster_size', 1) for t in merged_themes)
+    masses = [
+        _evidence_mass(t.get("evidence_ids") or [], reviews_by_id)
+        for t in merged_themes
+    ]
+    max_mass = max(masses) if masses else 1.0
     roadmap_vectors = np.array([r["vector"] for r in roadmap_enriched])
 
     results = []
@@ -99,11 +130,20 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
         theme_id = theme.get('theme_id', 'unknown')
         latent_need = theme.get('latent_need', theme.get('surface_label', 'Unknown'))
         evidence_ids = theme.get('evidence_ids', [])
-        
-        # For scope checking, we'll need sample review texts
+
+        # Prefer highly upvoted reviews when sampling for scope check
+        if reviews_by_id:
+            ranked_ids = sorted(
+                evidence_ids,
+                key=lambda rid: _helpful_count(reviews_by_id.get(rid)),
+                reverse=True,
+            )
+        else:
+            ranked_ids = list(evidence_ids)
+
         evidence_texts = []
         if reviews_by_id:
-            for rid in evidence_ids[:5]:
+            for rid in ranked_ids[:5]:
                 if rid in reviews_by_id:
                     evidence_texts.append(reviews_by_id[rid].text)
         
@@ -151,7 +191,14 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
             continue
 
         # ====== CONFIDENCE FORMULA (updated) ======
-        vol_score = _normalize_volume(len(evidence_ids), max_size * 3)  # scale adjusted
+        # Volume uses upvote-weighted evidence mass, not raw review count.
+        mass = _evidence_mass(evidence_ids, reviews_by_id)
+        total_upvotes = 0
+        if reviews_by_id:
+            total_upvotes = sum(
+                _helpful_count(reviews_by_id.get(rid)) for rid in evidence_ids
+            )
+        vol_score = _normalize_volume(mass, max_mass * 3)
         recency_score = theme.get('recency_score', 0.5)  # from inferred themes
         roadmap_gap_score = 1 - best_sim
         scope_applicable = scope_result.get("scope_type", "none") != "none"
@@ -190,10 +237,12 @@ def run(merged_themes: list, roadmap_enriched: list, reviews_by_id: dict = None,
                 "weights": CONFIDENCE_WEIGHTS,
                 "active_weights": {k: round(w, 3) for k, w in active_weights.items()},
                 "raw_cluster_size": len(evidence_ids),
+                "upvote_weighted_mass": round(mass, 3),
+                "total_upvotes": int(total_upvotes),
                 "raw_similarity_to_nearest_roadmap_item": round(best_sim, 3),
                 "scope_type": scope_result.get("scope_type", "unknown"),
             },
-            evidence_ids=evidence_ids,
+            evidence_ids=ranked_ids,
             verdict=verdict,
             nearest_roadmap_item=nearest_id,
             roadmap_similarity=round(best_sim, 3),
